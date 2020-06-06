@@ -13,18 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/first', function () {
-    return view('first');
-});
-Route::get('/second', function () {
-    return view('second');
-});
-Route::get('/third', function () {
-    return view('third');
-});
-Route::get('/fourth', function () {
-    return view('fourth');
-});
-Route::get('/', function () {
-    return view('first');
+Route::get('/', "HomeController@index");
+
+Auth::routes();
+
+Route::get('language/{lang}', 'HomeController@language')->name('language');
+Route::get('/home', 'DashboardController@index')->name('home');
+
+Route::prefix('admin')->namespace('Back')->group(function () {
+    Route::name('admin')->get('/', 'AdminController@index');
+	
 });
