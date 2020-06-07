@@ -60,11 +60,11 @@
 
 
                      <div class="txt-h-right ">
-                        Click <span class="gray-clr"><a href="#">here</a></span> to submit enquiry<br/>
-                        Please email us at <span class="gray-clr">contact@mlfgalaxy.com</span><br/>
-                        Don't forget to put your phone number in the email<br/>
-                        Leave voicemail at <span class="gray-clr">000 000 00000</span><br/>
-                        8am-7pm; 7 days a week
+                        @lang('Click') <span class="gray-clr"><a href="#">@lang('here') </a></span>@lang('to submit enquiry')<br/>
+                        @lang('Please email us at') <span class="gray-clr">contact@mlfgalaxy.com</span><br/>
+                        @lang('Don\'t forget to put your phone number in the email')<br/>
+                        @lang('Leave voicemail at') <span class="gray-clr">000 000 00000</span><br/>
+                        @lang('8am-7pm; 7 days a week')
                      </div>
                    </div>
             </div>
@@ -85,40 +85,40 @@
 		</div>
 
           <ul class="min-menu">
-                        <li class="sub-menu"><a href="#">Home</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+                        <li class="sub-menu"><a href="#">@lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
                          <ul class="su-menu">
-                                 <li><a href=#">About Us</a></li>
+                                 <li><a href="#">@lang('About Us')</a></li>
 
-                                    <li><a href="#">Our Goals</a></li>
-                                    <li><a href="#">Our Services</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Blogs</a></li>
-                                   <li><a href="#">Legal documents</a></li>
+                                    <li><a href="#">@lang('Our Goals')</a></li>
+                                    <li><a href="#">@lang('Our Services')</a></li>
+                                    <li><a href="#">@lang('Testimonials')</a></li>
+                                    <li><a href="#">@lang('Blogs')</a></li>
+                                   <li><a href="#">@lang('Legal documents')</a></li>
                                 </ul>
 
                          </li>
-						 <li class="sub-menu"><a href="#">My choice</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+						 <li class="sub-menu"><a href="#">@lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
                           <ul class="su-menu">
-							<li><a href="#">French</a></li>
-							<li><a href="#">Spanish</a></li>
+							<li><a href="#">@lang('French')</a></li>
+							<li><a href="#">@lang('Spanish')</a></li>
 						  </ul>
                          </li>
-                        <li class="sub-menu"><a href="#">Classes</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+                        <li class="sub-menu"><a href="#">@lang('Classes')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
                           <ul class="su-menu">
-                                    <li><a href="#">Photo Gallery</a></li>
-                                    <li><a href="#">Class Structure</a></li>
-                                    <li><a href="#">Extension Classes</a></li>
-									<li><a href="#">Adult Classes</a></li>
-                                    <li><a href="#">Target Schools</a></li>
-                                    <li><a href="#">Useful Links</a></li>
-									<li><a href="">FAQ</a></li>
+                                    <li><a href="#">@lang('Photo Gallery')</a></li>
+                                    <li><a href="#">@lang('Class Structure')</a></li>
+                                    <li><a href="#">@lang('Extension Classes')</a></li>
+									<li><a href="#">@lang('Adult Classes')</a></li>
+                                    <li><a href="#">@lang('Target Schools')</a></li>
+                                    <li><a href="#">@lang('Useful Links')</a></li>
+									<li><a href="">@lang('FAQ')</a></li>
                                 </ul>
                          </li>
 
-                         <li class="sub-menu"><a href="javascript:void(0);">Contact Us</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+                         <li class="sub-menu"><a href="javascript:void(0);">@lang('Contact Us')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
                           <ul class="su-menu">
-                              <li><a href="#">Enquiry Form</a></li>
-                              <li><a href="#">More Infos</a></li>
+                              <li><a href="#">@lang('Enquiry Form')</a></li>
+                              <li><a href="#">@lang('More Infos')</a></li>
                           </ul>
                          </li>
 						 <li class="sub-menu">
@@ -221,10 +221,8 @@ gtag('config', 'UA-109162283-2');
             <div class="item active">
                <img src="{{asset('uploads/banners/2284.jpg')}}" alt="slider" />
                <div class="carousel-caption">
-                  <h2>Online Course</h2>
-                  <p>Good news !!! We provide customized tuition via online sessions. It doesn't matter where you live as long as you have a laptop/ipad, broadband connection and a headphone.
-
-We teach using the proven framework & methodologies that has enabled our large number of students to get selected into the top grammar schools (QE Boys, Wilson, Olave's, Tiffin etc.) and independent schools (Eton, Westminster, City of London Boys, Sevenoaks, King's College). We specialise in both GL and CEM format. <br/> <br/>
+                  <h2>@lang('Online Course')</h2>
+                  <p>@lang('Good news !!! We provide customized tuition via online sessions. It doesn\'t matter where you live as long as you have a laptop/ipad, broadband connection and a headphone. We teach using the proven framework & methodologies that has enabled our large number of students to get selected into the top grammar schools(QE Boys, Wilson, Olave\'s, Tiffin etc.) and independent schools(Eton, Westminster, City of London Boys, Sevenoaks, King\'s College). We specialise in both GL and CEM format.')<br/> <br/>
                  <!-- <p class="text-center"><a href="#" class="btn-more"> Read More</a></p></p> -->
                </div>
             </div>
@@ -239,25 +237,23 @@ We teach using the proven framework & methodologies that has enabled our large n
                          <div class="item">
                <img src="{{asset('uploads/banners/1441.jpg')}}" alt="slider" />
                 <div class="carousel-caption">
-                  <h2>RESULTS</h2>
-                  <p>We have achieved wonderful success in 2019 exams. <br>
-					*  QE/Wilson/St.Olave's:  45 Selections <br>
-					Selections <br>
-					* Newstead Wood : 51 Selections <br>
-					* Kent : Over 100 Selections   <br>
-					* Bexley : Over 100 Selections <br>
+                  <h2>@lang('RESULTS')</h2>
+                  <p>@lang('We have achieved wonderful success in 2019 exams.') <br>
+					*  QE/Wilson/St.Olaves:  45 @lang('selections') <br>
+					* Newstead Wood : 51 @lang('selections') <br>
+					* Kent : @lang('Over 100 Selections')   <br>
+					* Bexley : @lang('Over 100 Selections') <br>
 					<br>
 
-Students received offers including scholarship from various top private schools - Sevenoaks (over 10), City of London Boys, Alleyn's, Habs Boys, King's College, Dulwich, Eton, Westminster etc. <br/> <br/>
+@lang('Students received offers including scholarship from various top private schools') - Sevenoaks (over 10), City of London Boys, Alleyn's, Habs Boys, King's College, Dulwich, Eton, Westminster etc. <br/> <br/>
                 <!--  <p class="text-center"><a href="#" class="btn-more"> Read More</a></p></p> -->
                </div>
             </div>
             <div class="item">
                <img src="{{asset('uploads/banners/580.jpg')}}" alt="slider" />
                 <div class="carousel-caption">
-                  <h2>Online courses Experts</h2>
-                  <p>As our classes are now conducted ONLINE, we can accommodate more students. Please drop an enquiry and we will contact you shortly.
-Our Year 5 classes are customized for specific grammar and private schools. Most of our students are toppers from various state and private schools. We train them with the best strategy and material which is evident in our fabulous results. <br/> <br/>
+                  <h2>@lang('Online courses Experts')</h2>
+                  <p>@lang('As our classes are now conducted ONLINE, we can accommodate more students. Please drop an enquiry and we will contact you shortly. Our Year 5 classes are customized for specific grammar and private schools. Most of our students are toppers from various state and private schools. We train them with the best strategy and material which is evident in our fabulous results.') <br/> <br/>
                 <!--  <p class="text-center"><a href="#" class="btn-more"> Read More</a></p></p> -->
                </div>
             </div>
@@ -279,7 +275,7 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
       <div class="black-box">
       <div class="container">
 
-         <marquee behavior="scroll" direction="left" scrollamount="5" >**Due to the recent coronavirus pandemic,  we now offer ONLINE classes and students absolutely love it.        **2020 Results  **QE Boys topper 280/280 is our student.   **Students passed in Westminster, Eton and Tonbridge Boys.                    Congratulations to 5 students who passed 10 plus exam (CLSB, Whitgift, Trinity)             2019  EXAM RESULTS  - QE/WILSON/OLAVE - 45 SELECTIONS                   **  KENT (GL) - OVER 100 SELECTIONS         ** BEXLEY (CEM) - OVER 100 SELECTIONS       **NEWSTEAD - 51 SELECTIONS           </marquee>
+         <marquee behavior="scroll" direction="left" scrollamount="5" >@lang('**Due to the recent coronavirus pandemic,  we now offer ONLINE classes and students absolutely love it.        **2020 Results  **QE Boys topper 280/280 is our student.   **Students passed in Westminster, Eton and Tonbridge Boys.                    Congratulations to 5 students who passed 10 plus exam (CLSB, Whitgift, Trinity)             2019  EXAM RESULTS  - QE/WILSON/OLAVE - 45 SELECTIONS                   **  KENT (GL) - OVER 100 SELECTIONS         ** BEXLEY (CEM) - OVER 100 SELECTIONS       **NEWSTEAD - 51 SELECTIONS')           </marquee>
 
       </div>
 
@@ -290,50 +286,46 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
             <div class="row">
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                   <div class="box-3">
-                 <h3>WHAT WE DO</h3>
+                 <h3>@lang('WHAT WE DO')</h3>
                      <p class="inx-pgs">
- Good news!! We now provide online tuition and it is a big success with the existing students. It doesn&#39;t matter where you live in England, you can now join our online tuition as long as you have a laptop/ipad/pc, headphone and a broadband connection.  Over 95% tuition parents are delighted with the online classes. 
- We teach using the proven framework, tools & methodologies that has enabled our large number of students to get selected into the top grammar schools (GL, CEM, Super-selective) and independent schools with scholarship.
-  
-
-                          Our classes are only for Year 4 and Year 5 children. Click&nbsp;<a href="#">here</a> to know more about us.
+ @lang('Good news!! We now provide online tuition and it is a big success with the existing students. It doesn\'t matter where you live in England, you can now join our online tuition as long as you have a laptop/ipad/pc, headphone and a broadband connection.  Over 95% tuition parents are delighted with the online classes. We teach using the proven framework, tools & methodologies that has enabled our large number of students to get selected into the top grammar schools (GL, CEM, Super-selective) and independent schools with scholarship. Our classes are only for Year 4 and Year 5 children. Click')<a href="#">@lang('here')</a> @lang('to know more about us.')
                       </p>
                   </div>
                   </div>
 
                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                   <div class="box-3">
-                 <h3>OUR TARGET SCHOOLS</h3>
-                  <p>We target the following schools for 11 Plus exams:  </p>
+                 <h3>@lang('OUR TARGET SCHOOLS')</h3>
+                  <p>@lang('We target the following schools for 11 Plus exams:')  </p>
                       <ul>
                        <li>St. Olave's, Orpington</li>
-                          <li>The Judd School, Tonbridge</li>
-                          <li>Dartford Grammar, Dartford</li>
-                          <li>Newstead Wood, Orpington</li>
-                          <li>Tonbridge Grammar</li>
+                          <li>@lang('The Judd School'), Tonbridge</li>
+                          <li>@lang('Dartford Grammar'), Dartford</li>
+                          <li>@lang('Newstead Wood'), Orpington</li>
+                          <li>@lang('Tonbridge Grammar')</li>
                           <li>Wilson's School, Wallington</li>
                           <li>QE Boys; Henrietta Barnet</li>
-                          <li>Other Kent and Bexley schools</li>
-                          <li>Private Schools (scholarships)</li>
+                          <li>@lang('Other Kent and Bexley schools')</li>
+                          <li>@lang('Private Schools (scholarships)')</li>
 
                       </ul>
                   </div>
                   </div>
                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                   <div class="box-3">
-                 <h3>OUR RESULTS</h3>
+                 <h3>@lang('OUR RESULTS')</h3>
                                    <!-- <p>Our results for Sep 2019 are: </p> -->
-                  <p>Our latest results are: </p>
+                  <p>@lang('Our latest results are:') </p>
                       <ul>
-						 <li>QE/Olave/Wilson: 45 selections</li>
-						  <li>Kent: 100 selections</li>
-						  <li>Bexley: 100 selections</li>
-						  <li>Newstead Wood 2019: 51 selections</li>
-						  <li>Independent (11 Plus): 25 selections</li>
-						  <li>Independent (10 Plus): 5 selections</li>
+						 <li>QE/Olave/Wilson: 45 @lang('selections')</li>
+						  <li>Kent: 100 @lang('selections')</li>
+						  <li>Bexley: 100 @lang('selections')</li>
+						  <li>Newstead Wood 2019: 51 @lang('selections')s</li>
+						  <li>@lang('Independent') (11 Plus): 25 @lang('selections')</li>
+						  <li>@lang('Independent') (10 Plus): 5 @lang('selections')</li>
 
                       </ul>
-                     <p>Click<a href="#"> here</a> for detailed results</p>
+                     <p>@lang('Click')<a href="#"> here</a> @lang('for detailed results')</p>
                   </div>
                   </div>
                   <!-- invisible boxes -->
@@ -379,17 +371,17 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                        <div class="block-hdnews" >
 
                           <div class="list-wrpaaer">
-                            <div class="news-sections">Latest News</div>
+                            <div class="news-sections">@lang('Latest News')</div>
                             <ul class="list-aggregate" id="marquee-vertical" >
 									<li>
-										 To enquire, please complete the Additional Information Form (under Contact Us).  It is NOT the Contact Us form.
+										 @lang('To enquire, please complete the Additional Information Form (under Contact Us).  It is NOT the Contact Us form').
 
 									 </li>
 									 <li>
-										 COVID-19 Update: Due to the recent coronavirus pandemic, we have started online classes and have received wonderful feedback from the existing tuition students. See class schedule for timings.
+										 @lang('COVID-19 Update: Due to the recent coronavirus pandemic, we have started online classes and have received wonderful feedback from the existing tuition students. See class schedule for timings').
 									 </li>
 									 <li>
-										 Good news !! We have spaces as all classes are now conducted ONLINE.
+										 @lang('Good news !! We have spaces as all classes are now conducted ONLINE').
 
 									 </li>
                              </ul>
@@ -405,8 +397,8 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a  style="text-decoration:none;" href="#">Why MLFGalaxy?</a>	</div>
-                     Want to get success in exam and know more about our tuition?
+                     <div class="heading-box1"><a  style="text-decoration:none;" href="#">@lang('Why') MLFGalaxy?</a>	</div>
+                     @lang('Want to get success in exam and know more about our tuition')?
                   </div>
                   <div class="clr"></div>
                   </div>
@@ -415,8 +407,8 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box2.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"> <a style="text-decoration:none;" href="#">Our Goal</a></div>
-                    See our stupendous success in exams.
+                     <div class="heading-box1"> <a style="text-decoration:none;" href="#">@lang('Our Goal')</a></div>
+                    @lang('See our stupendous success in exams').
                   </div>
                  <div class="clr"></div>
                </div>
@@ -425,8 +417,8 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box3.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"> <a style="text-decoration:none;" href="#"> Testimonials</a></div>
-                     See what parents say about us.
+                     <div class="heading-box1"> <a style="text-decoration:none;" href="#"> @lang('Testimonials')</a></div>
+                     @lang('See what parents say about us').
                   </div>
                   <div class="clr"></div>
                   </div>
@@ -435,8 +427,8 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#">	French classes</a></div>
-                     Want to know what we cover in the classes
+                     <div class="heading-box1"><a style="text-decoration:none;" href="#">	@lang('French classes')</a></div>
+                     @lang('Want to know what we cover in the classes')
                   </div>
                   <div class="clr"></div>
                    </div>
@@ -446,8 +438,8 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box2.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"> <a style="text-decoration:none;" href="#"> Spanish classes</a></div>
-                     Want to know what day/time the classes are held
+                     <div class="heading-box1"> <a style="text-decoration:none;" href="#"> @lang('Spanish classes')</a></div>
+                     @lang('Want to know what day/time the classes are held')
                   </div>
                   <div class="clr"></div>
                   </div>
@@ -456,8 +448,8 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box3.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#"> Mock / Revision Course / adult classes</a></div>
-                     Want to know more about extension classes
+                     <div class="heading-box1"><a style="text-decoration:none;" href="#"> @lang('Mock / Revision Course / adult classes')</a></div>
+                     @lang('Want to know more about extension classes')
                   </div>
                   <div class="clr"></div>
                    </div>
@@ -466,8 +458,8 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#"> Services</a></div>
-                    Our range of advisory services to build strategy for your success.
+                     <div class="heading-box1"><a style="text-decoration:none;" href="#"> @lang('Services')</a></div>
+                    @lang('Our range of advisory services to build strategy for your success').
                   </div>
                  <div class="clr"></div>
                </div>
@@ -477,8 +469,8 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box2.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#">Blogs &amp; News</a></div>
-                    Watch out for news, blogs &amp; updates
+                     <div class="heading-box1"><a style="text-decoration:none;" href="#">Blogs &amp; @lang('News')</a></div>
+                    @lang('Watch out for news, blogs &amp; updates')
                   </div>
                  <div class="clr"></div>
                </div>
@@ -488,8 +480,8 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box3.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#">Contact Us</a></div>
-                    We are generally over-subscribed. Contact us now.
+                     <div class="heading-box1"><a style="text-decoration:none;" href="#">@lang('Contact Us')</a></div>
+                    @lang('We are generally over-subscribed. Contact us now').
                   </div>
                  <div class="clr"></div>
                </div>
@@ -559,12 +551,12 @@ $(function() {
              <div class="row">
 
                  <div class="col-md-4">
-                     <div class="copy-pading">Copyright &copy; 2020 <a href="{{ route('login') }}" title="@lang('Login')">MLFGalaxy</a> Right Reserved. </div>
+                     <div class="copy-pading">Copyright &copy; 2020 <a href="{{ route('login') }}" title="@lang('Login')">MLFGalaxy</a> @lang('Right Reserved'). </div>
                  </div>
                  <div class="col-md-3">
                        <div class="cont-footer">
                      <ul>
-                        <li>Follow us</li>
+                        <li>@lang('Follow us')</li>
                         <li> <a target="blank"  href="#"> <i class="fa fa-facebook"></i></a></li>
                         <li> <a target="blank"  href="#"><i class="fa fa-twitter"></i></a></li>
                         <li> <a  target="blank" href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -573,7 +565,7 @@ $(function() {
                   </div>
                  </div>
                  <div class="col-md-5">
-                      <div class="developed-right-txt">Website Developed by <a href="#" target="_blank"></a></div>
+                      <div class="developed-right-txt">@lang('Website Developed by') <a href="#" target="_blank"></a></div>
                  </div>
              </div>
           </div>
