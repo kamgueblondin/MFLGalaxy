@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', "HomeController@index");
 
+// Les routes des différentes pages
+
+Route::get('/about_us', "PagesController@about_us")->name('about_us');
+
 Auth::routes();
 
 Route::get('language/{lang}', 'HomeController@language')->name('language');
