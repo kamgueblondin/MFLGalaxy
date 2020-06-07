@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="" />
         <meta name="keywords" content="" />
-        <title>{{ config('app.name', 'MLFGalaxy') }}</title>
+        <title>{{ config('app.name', 'MFLGalaxy') }}</title>
         <!-- Bootstrap Core CSS -->
         <link href="{{ asset('images/icon.png') }}" rel="shortcut icon">
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
@@ -47,7 +47,7 @@
       <div class="heading-mrg">
          <div class="container">
             <div class="row">
-                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-4"><a href="#"> <img src="{{ asset('images/logo.png') }}" class="class-ace-logo" alt="MLFGalaxy" /></a>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-4"><a href="#"> <img src="{{ asset('images/logo.png') }}" class="class-ace-logo" alt="MFLGalaxy" /></a>
                   </div>
                   <div class="col-xs-6 col-sm-12 col-md-4 col-lg-4">
                      <div class="header-text">
@@ -61,7 +61,7 @@
 
                      <div class="txt-h-right ">
                         Click <span class="gray-clr"><a href="#">here</a></span> to submit enquiry<br/>
-                        Please email us at <span class="gray-clr">contact@mlfgalaxy.com</span><br/>
+                        Please email us at <span class="gray-clr">contact@mflgalaxy.com</span><br/>
                         Don't forget to put your phone number in the email<br/>
                         Leave voicemail at <span class="gray-clr">000 000 00000</span><br/>
                         8am-7pm; 7 days a week
@@ -229,13 +229,13 @@ We teach using the proven framework & methodologies that has enabled our large n
                </div>
             </div>
 
-       <!--      <div class="item">
-               <img src="#" alt="slider" />
+       <div class="item">
+               <img src="{{asset('uploads/banners/123.jpg')}}" alt="slider" />
                <div class="carousel-caption">
                   <h2>Heading Here2</h2>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry  Lorem Ipsum has been the industry's  Lorem Ipsum is simply dummy text of the printing and typesetting industry  Lorem Ipsum has been the industry's </p>
                </div>
-            </div> -->
+            </div>
                          <div class="item">
                <img src="{{asset('uploads/banners/1441.jpg')}}" alt="slider" />
                 <div class="carousel-caption">
@@ -261,9 +261,7 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                 <!--  <p class="text-center"><a href="#" class="btn-more"> Read More</a></p></p> -->
                </div>
             </div>
-                       <!--  <div class="item">
-               <img src="#" alt="slider" />
-            </div> -->
+            
          </div>
          <!-- Left and right controls -->
          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -405,7 +403,7 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a  style="text-decoration:none;" href="#">Why MLFGalaxy?</a>	</div>
+                     <div class="heading-box1"><a  style="text-decoration:none;" href="#">Why MFLGalaxy?</a>	</div>
                      Want to get success in exam and know more about our tuition?
                   </div>
                   <div class="clr"></div>
@@ -433,7 +431,7 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                </div>
                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/fr.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#">	French classes</a></div>
                      Want to know what we cover in the classes
@@ -444,7 +442,7 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
 
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box2.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/es.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"> <a style="text-decoration:none;" href="#"> Spanish classes</a></div>
                      Want to know what day/time the classes are held
@@ -454,7 +452,7 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                </div>
                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box3.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/tes.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#"> Mock / Revision Course / adult classes</a></div>
                      Want to know more about extension classes
@@ -464,7 +462,7 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
                </div>
                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/serv.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#"> Services</a></div>
                     Our range of advisory services to build strategy for your success.
@@ -475,7 +473,7 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
 
                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box2.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/blog.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#">Blogs &amp; News</a></div>
                     Watch out for news, blogs &amp; updates
@@ -486,7 +484,7 @@ Our Year 5 classes are customized for specific grammar and private schools. Most
 
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box3.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/conta.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#">Contact Us</a></div>
                     We are generally over-subscribed. Contact us now.
@@ -559,7 +557,7 @@ $(function() {
              <div class="row">
 
                  <div class="col-md-4">
-                     <div class="copy-pading">Copyright &copy; 2020 <a href="{{ route('login') }}" title="@lang('Login')">MLFGalaxy</a> Right Reserved. </div>
+                     <div class="copy-pading">Copyright &copy; 2020 <a href="{{ route('login') }}" title="@lang('Login')">MFLGalaxy</a> Right Reserved. </div>
                  </div>
                  <div class="col-md-3">
                        <div class="cont-footer">
