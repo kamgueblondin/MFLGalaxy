@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'MLFGalaxy',
-    'title_prefix' => 'MLFGalaxy | ',
+    'title' => 'MFLGalaxy',
+    'title_prefix' => 'MFLGalaxy | ',
     'title_postfix' => '',
 
     /*
@@ -45,12 +45,12 @@ return [
     |
     */
 
-    'logo' => '<b>MLFG</b>alaxy',
-    'logo_img' => 'images/logo/icon.png',
+    'logo' => '<b>MFLG</b>alaxy',
+    'logo_img' => 'images/icon.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'MLFGalaxy',
+    'logo_img_alt' => 'MFLGalaxy',
 
     /*
     |--------------------------------------------------------------------------

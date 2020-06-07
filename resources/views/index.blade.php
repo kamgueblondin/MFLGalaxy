@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="" />
         <meta name="keywords" content="" />
-        <title>{{ config('app.name', 'MLFGalaxy') }}</title>
+        <title>{{ config('app.name', 'MFLGalaxy') }}</title>
         <!-- Bootstrap Core CSS -->
         <link href="{{ asset('images/icon.png') }}" rel="shortcut icon">
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
@@ -47,7 +47,7 @@
       <div class="heading-mrg">
          <div class="container">
             <div class="row">
-                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-4"><a href="#"> <img src="{{ asset('images/logo.png') }}" class="class-ace-logo" alt="MLFGalaxy" /></a>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-4"><a href="#"> <img src="{{ asset('images/logo.png') }}" class="class-ace-logo" alt="MFLGalaxy" /></a>
                   </div>
                   <div class="col-xs-6 col-sm-12 col-md-4 col-lg-4">
                      <div class="header-text">
@@ -60,11 +60,13 @@
 
 
                      <div class="txt-h-right ">
+
                         @lang('Click') <span class="gray-clr"><a href="#">@lang('here') </a></span>@lang('to submit enquiry')<br/>
-                        @lang('Please email us at') <span class="gray-clr">contact@mlfgalaxy.com</span><br/>
+                        @lang('Please email us at') <span class="gray-clr">contact@mflgalaxy.com</span><br/>
                         @lang('Don\'t forget to put your phone number in the email')<br/>
                         @lang('Leave voicemail at') <span class="gray-clr">000 000 00000</span><br/>
                         @lang('8am-7pm; 7 days a week')
+
                      </div>
                    </div>
             </div>
@@ -227,13 +229,13 @@ gtag('config', 'UA-109162283-2');
                </div>
             </div>
 
-       <!--      <div class="item">
-               <img src="#" alt="slider" />
+       <div class="item">
+               <img src="{{asset('uploads/banners/123.jpg')}}" alt="slider" />
                <div class="carousel-caption">
-                  <h2>Heading Here2</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry  Lorem Ipsum has been the industry's  Lorem Ipsum is simply dummy text of the printing and typesetting industry  Lorem Ipsum has been the industry's </p>
+                  <h2>@lang('Online Course')</h2>
+                  <p>@lang('Good news !!! We provide customized tuition via online sessions. It doesn\'t matter where you live as long as you have a laptop/ipad, broadband connection and a headphone. We teach using the proven framework & methodologies that has enabled our large number of students to get selected into the top grammar schools(QE Boys, Wilson, Olave\'s, Tiffin etc.) and independent schools(Eton, Westminster, City of London Boys, Sevenoaks, King\'s College). We specialise in both GL and CEM format.')<br/> <br/>
                </div>
-            </div> -->
+            </div>
                          <div class="item">
                <img src="{{asset('uploads/banners/1441.jpg')}}" alt="slider" />
                 <div class="carousel-caption">
@@ -257,9 +259,7 @@ gtag('config', 'UA-109162283-2');
                 <!--  <p class="text-center"><a href="#" class="btn-more"> Read More</a></p></p> -->
                </div>
             </div>
-                       <!--  <div class="item">
-               <img src="#" alt="slider" />
-            </div> -->
+            
          </div>
          <!-- Left and right controls -->
          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -397,8 +397,10 @@ gtag('config', 'UA-109162283-2');
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a  style="text-decoration:none;" href="#">@lang('Why') MLFGalaxy?</a>	</div>
+
+                     <div class="heading-box1"><a  style="text-decoration:none;" href="#">@lang('Why') MFLGalaxy?</a>	</div>
                      @lang('Want to get success in exam and know more about our tuition')?
+
                   </div>
                   <div class="clr"></div>
                   </div>
@@ -425,7 +427,7 @@ gtag('config', 'UA-109162283-2');
                </div>
                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/fr.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#">	@lang('French classes')</a></div>
                      @lang('Want to know what we cover in the classes')
@@ -436,7 +438,7 @@ gtag('config', 'UA-109162283-2');
 
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box2.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/es.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"> <a style="text-decoration:none;" href="#"> @lang('Spanish classes')</a></div>
                      @lang('Want to know what day/time the classes are held')
@@ -446,7 +448,7 @@ gtag('config', 'UA-109162283-2');
                </div>
                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box3.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/tes.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#"> @lang('Mock / Revision Course / adult classes')</a></div>
                      @lang('Want to know more about extension classes')
@@ -456,7 +458,7 @@ gtag('config', 'UA-109162283-2');
                </div>
                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/serv.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#"> @lang('Services')</a></div>
                     @lang('Our range of advisory services to build strategy for your success').
@@ -467,7 +469,7 @@ gtag('config', 'UA-109162283-2');
 
                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box2.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/blog.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#">Blogs &amp; @lang('News')</a></div>
                     @lang('Watch out for news, blogs &amp; updates')
@@ -478,7 +480,7 @@ gtag('config', 'UA-109162283-2');
 
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                <div class="box-white">
-                  <div class="img-boxx"><img src="{{asset('images/img-box3.png')}}" alt="" /></div>
+                  <div class="img-boxx"><img src="{{asset('images/conta.png')}}" alt="" /></div>
                   <div class="tex-boxx">
                      <div class="heading-box1"><a style="text-decoration:none;" href="#">@lang('Contact Us')</a></div>
                     @lang('We are generally over-subscribed. Contact us now').
@@ -551,7 +553,9 @@ $(function() {
              <div class="row">
 
                  <div class="col-md-4">
-                     <div class="copy-pading">Copyright &copy; 2020 <a href="{{ route('login') }}" title="@lang('Login')">MLFGalaxy</a> @lang('Right Reserved'). </div>
+
+                     <div class="copy-pading">Copyright &copy; 2020 <a href="{{ route('login') }}" title="@lang('Login')">MFLGalaxy</a> @lang('Right Reserved'). </div>
+
                  </div>
                  <div class="col-md-3">
                        <div class="cont-footer">
