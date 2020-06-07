@@ -44,7 +44,7 @@
       <div class="heading-mrg">
          <div class="container">
             <div class="row">
-                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-4"><a href="#"> <img src="{{ asset('images/logo.png') }}" class="class-ace-logo" alt="MFLGalaxy" /></a>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-4"><a href="{{url('/')}}"> <img src="{{ asset('images/logo.png') }}" class="class-ace-logo" alt="MFLGalaxy" /></a>
                   </div>
                   <div class="col-xs-6 col-sm-12 col-md-4 col-lg-4">
                      <div class="header-text">
@@ -76,37 +76,37 @@
 			<div class="img-responsive-logo"></div>
 		</div>
           <ul class="min-menu">
-				<li class="sub-menu"><a href="#">@lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				<li class="sub-menu"><a href="{{url('/')}}">@lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				 <ul class="su-menu">
 					<li><a href="{{ route('about_us') }}">@lang('About Us')</a></li>
-						<li><a href="#">@lang('Our Goals')</a></li>
-						<li><a href="#">@lang('Our Services')</a></li>
-						<li><a href="#">@lang('Testimonials')</a></li>
-						<li><a href="#">@lang('Blogs')</a></li>
-					   <li><a href="#">@lang('Legal documents')</a></li>
+						<li><a href="{{ route('our_goals') }}">@lang('Our Goals')</a></li>
+						<li><a href="{{ route('our_services') }}">@lang('Our Services')</a></li>
+						<li><a href="{{ route('testimonials') }}">@lang('Testimonials')</a></li>
+						<li><a href="{{ route('blogs') }}">@lang('Blogs')</a></li>
+					   <li><a href="{{ route('legal_documents') }}">@lang('Legal documents')</a></li>
 					</ul>
 				 </li>
 				 <li class="sub-menu"><a href="#">@lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
-					<li><a href="#">@lang('French')</a></li>
-					<li><a href="#">@lang('Spanish')</a></li>
+					<li><a href="{{ route('french') }}">@lang('French')</a></li>
+					<li><a href="{{ route('spanish') }}">@lang('Spanish')</a></li>
 				  </ul>
 				 </li>
 				<li class="sub-menu"><a href="#">@lang('Classes')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
-						<li><a href="#">@lang('Photo Gallery')</a></li>
-						<li><a href="#">@lang('Class Structure')</a></li>
-						<li><a href="#">@lang('Extension Classes')</a></li>
-						<li><a href="#">@lang('Adult Classes')</a></li>
-						<li><a href="#">@lang('Target Schools')</a></li>
-						<li><a href="#">@lang('Useful Links')</a></li>
-						<li><a href="">@lang('FAQ')</a></li>
+						<li><a href="{{ route('gallery') }}">@lang('Photo Gallery')</a></li>
+						<li><a href="{{ route('class_structure') }}">@lang('Class Structure')</a></li>
+						<li><a href="{{ route('extension_classes') }}">@lang('Extension Classes')</a></li>
+						<li><a href="{{ route('adult_classes') }}">@lang('Adult Classes')</a></li>
+						<li><a href="{{ route('target_schools') }}">@lang('Target Schools')</a></li>
+						<li><a href="{{ route('useful_links') }}">@lang('Useful Links')</a></li>
+						<li><a href="{{ route('faq') }}">@lang('FAQ')</a></li>
 					</ul>
 				 </li>
 				 <li class="sub-menu"><a href="javascript:void(0);">@lang('Contact Us')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
-					  <li><a href="#">@lang('Enquiry Form')</a></li>
-					  <li><a href="#">@lang('More Infos')</a></li>
+					  <li><a href="{{ route('enquiry_form') }}">@lang('Enquiry Form')</a></li>
+					  <li><a href="{{ route('more_infos') }}">@lang('More Infos')</a></li>
 				  </ul>
 				 </li>
 				 <li class="sub-menu">
