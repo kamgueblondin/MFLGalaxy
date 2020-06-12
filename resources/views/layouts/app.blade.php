@@ -115,6 +115,8 @@
 						Français
 					@elseif(app()->getLocale() == 'es')
 						Español
+					@elseif(app()->getLocale() == 'de')
+						Deutsch
 					@else
 						English
 					@endif
@@ -128,6 +130,8 @@
 								Français
 							@elseif($locale == 'es')
 								Español
+							@elseif($locale == 'de')
+								Deutsch
 							@else
 								English
 							@endif

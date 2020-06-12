@@ -118,7 +118,7 @@
 						  <li>@lang('Independent') (10 Plus): 5 @lang('selections')</li>
 
                       </ul>
-                     <p>@lang('Click')<a href="#"> here</a> @lang('for detailed results')</p>
+                     <p>@lang('Click')<a href="#"> @lang('here')</a> @lang('for detailed results')</p>
                   </div>
                   </div>
                   <!-- invisible boxes -->
@@ -186,7 +186,7 @@
                   <div class="img-boxx"><img src="{{asset('images/img-box.png')}}" alt="" /></div>
                   <div class="tex-boxx">
 
-                     <div class="heading-box1"><a  style="text-decoration:none;" href="#">@lang('Why') MFLGalaxy?</a>	</div>
+                     <div class="heading-box1"><a  style="text-decoration:none;" href="{{ route('about_us') }}">@lang('Why') MFLGalaxy?</a>	</div>
                      @lang('Want to get success in exam and know more about our tuition')?
 
                   </div>
@@ -197,7 +197,7 @@
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box2.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"> <a style="text-decoration:none;" href="#">@lang('Our Goal')</a></div>
+                     <div class="heading-box1"> <a style="text-decoration:none;" href="{{ route('our_goals') }}">@lang('Our Goal')</a></div>
                     @lang('See our stupendous success in exams').
                   </div>
                  <div class="clr"></div>
@@ -207,7 +207,7 @@
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/img-box3.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"> <a style="text-decoration:none;" href="#"> @lang('Testimonials')</a></div>
+                     <div class="heading-box1"> <a style="text-decoration:none;" href="{{ route('testimonials') }}"> @lang('Testimonials')</a></div>
                      @lang('See what parents say about us').
                   </div>
                   <div class="clr"></div>
@@ -217,7 +217,7 @@
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/fr.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#">	@lang('French classes')</a></div>
+                     <div class="heading-box1"><a style="text-decoration:none;" href="{{ route('french') }}">	@lang('French classes')</a></div>
                      @lang('Want to know what we cover in the classes')
                   </div>
                   <div class="clr"></div>
@@ -228,7 +228,7 @@
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/es.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"> <a style="text-decoration:none;" href="#"> @lang('Spanish classes')</a></div>
+                     <div class="heading-box1"> <a style="text-decoration:none;" href="{{ route('spanish') }}"> @lang('Spanish classes')</a></div>
                      @lang('Want to know what day/time the classes are held')
                   </div>
                   <div class="clr"></div>
@@ -238,7 +238,7 @@
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/tes.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#"> @lang('Mock / Revision Course / adult classes')</a></div>
+                     <div class="heading-box1"><a style="text-decoration:none;" href="{{ route('adult_classes') }}"> @lang('Mock / Revision Course / adult classes')</a></div>
                      @lang('Want to know more about extension classes')
                   </div>
                   <div class="clr"></div>
@@ -248,7 +248,7 @@
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/serv.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#"> @lang('Services')</a></div>
+                     <div class="heading-box1"><a style="text-decoration:none;" href="{{ route('our_services') }}"> @lang('Services')</a></div>
                     @lang('Our range of advisory services to build strategy for your success').
                   </div>
                  <div class="clr"></div>
@@ -259,7 +259,7 @@
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/blog.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#">Blogs &amp; @lang('News')</a></div>
+                     <div class="heading-box1"><a style="text-decoration:none;" href="{{ route('blogs') }}">Blogs &amp; @lang('News')</a></div>
                     @lang('Watch out for news, blogs &amp; updates')
                   </div>
                  <div class="clr"></div>
@@ -269,7 +269,7 @@
                <div class="box-white">
                   <div class="img-boxx"><img src="{{asset('images/conta.png')}}" alt="" /></div>
                   <div class="tex-boxx">
-                     <div class="heading-box1"><a style="text-decoration:none;" href="#">@lang('Contact Us')</a></div>
+                     <div class="heading-box1"><a style="text-decoration:none;" href="{{ route('enquiry_form') }}">@lang('Contact Us')</a></div>
                     @lang('We are generally over-subscribed. Contact us now').
                   </div>
                  <div class="clr"></div>
