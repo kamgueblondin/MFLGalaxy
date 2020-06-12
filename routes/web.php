@@ -25,7 +25,7 @@ Route::get('/blogs', "PagesController@blogs")->name('blogs');
 Route::get('/legal_documents', "PagesController@legal_documents")->name('legal_documents');
 Route::get('/french', "PagesController@french")->name('french');
 Route::get('/spanish', "PagesController@spanish")->name('spanish');
-Route::get('/deutsch', "PagesController@deutsch")->name('deutsch');
+Route::get('/german', "PagesController@german")->name('german');
 Route::get('/gallery', "PagesController@gallery")->name('gallery');
 Route::get('/class_structure', "PagesController@class_structure")->name('class_structure');
 Route::get('/extension_classes', "PagesController@extension_classes")->name('extension_classes');

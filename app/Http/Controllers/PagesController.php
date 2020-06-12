@@ -30,8 +30,8 @@ class PagesController extends Controller
     public function spanish(){
 		return view('pages.spanish');
 	}
-	public function deutsch(){
-		return view('pages.deutsch');
+	public function german(){
+		return view('pages.german');
 	}
 	public function gallery(){
 		return view('pages.gallery');

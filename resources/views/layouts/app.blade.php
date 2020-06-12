@@ -102,6 +102,7 @@
 				  <ul class="su-menu">
 					<li><a href="{{ route('french') }}">@lang('French')</a></li>
 					<li><a href="{{ route('spanish') }}">@lang('Spanish')</a></li>
+					<li><a href="{{ route('german') }}">@lang('German')</a></li>
 				  </ul>
 				 </li>
 				<li class="sub-menu" style="color:#002493;"><a href="#" style="color:#002493;"> @lang('Classes')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
