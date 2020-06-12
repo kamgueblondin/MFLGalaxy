@@ -17,7 +17,7 @@
 				  </div>
 				</div>
 				<!-- Slide Two - Set the background image for this slide in the line below 1900x1080 -->
-				<div class="carousel-item" style="background-image: url('{{asset('images/banners/580.jpg') }}')">
+				<div class="carousel-item" style="background-image: url('{{asset('images/banners/1441.jpg') }}')">
 				  <div class="carousel-caption d-none d-md-block">
 					<h3>@lang('RESULTS')</h3>
 					<p>@lang('We have achieved wonderful success in 2019 exams.') <br>
@@ -31,7 +31,7 @@
 				  </div>
 				</div>
 				<!-- Slide Three - Set the background image for this slide in the line below -->
-				<div class="carousel-item" style="background-image: url('{{asset('images/banners/580.jpg') }}')">
+				<div class="carousel-item" style="background-image: url('{{asset('images/banners/2284.jpg') }}')">
 				  <div class="carousel-caption d-none d-md-block">
 					<h3>@lang('Online courses Experts')</h3>
 					<p>@lang('As our classes are now conducted ONLINE, we can accommodate more students. Please drop an enquiry and we will contact you shortly. Our Year 5 classes are customized for specific grammar and private schools. Most of our students are toppers from various state and private schools. We train them with the best strategy and material which is evident in our fabulous results.')</p>
@@ -56,7 +56,7 @@
 			  </marquee>
 		  </div>
 		  <!-- Page Content -->
-	  <div class="container">
+	  <div class="container-fluid">
 
 		<h1 class="my-4">Welcome to MFLGalaxy</h1>
 

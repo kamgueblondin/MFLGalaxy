@@ -81,7 +81,9 @@ ul.min-menu{margin-bottom: 0; display: block;}
 .min-menu li a:hover{color: #65aced;}
 .min-menu li:hover .su-menu, .min-menu li.sub-menu .su-menu.menu-active {height:auto;}
 .min-menu li.mega-menu:hover .su-menu, .min-menu li.mega-menu.sub-menu-open .su-menu {border: 1px solid #ddd;padding: 15px 0 20px;box-shadow:0 4px 5px rgba(0, 0, 0, 0.15);}
-.min-menu li .su-menu {transition: height 200ms ease-in 0s; -webkit-transition:height 200ms ease-in;-moz-transition:height 200ms ease-in;-o-transition:height 200ms ease-in;transition:height 200ms ease-in;height: 0;overflow: hidden; position: absolute;background: #fff;width: 250px;z-index: 99999;transition: 0.3s; box-shadow: 5px 8px 12px -7px #333;}
+/*
+.min-menu li .su-menu {transition: height 200ms ease-in 0s; -webkit-transition:height 200ms ease-in;-moz-transition:height 200ms ease-in;-o-transition:height 200ms ease-in;transition:height 200ms ease-in;height: 0;overflow: hidden; position:relative;background: #fff;width: 250px;z-index: 99999;transition: 0.3s; box-shadow: 5px 8px 12px -7px #333;}
+*/
 .min-menu li:hover .su-menu, .min-menu li.sub-menu .su-menu.menu-active {height:auto;}
 .min-menu li .su-menu li{display:block; transition: all 0.3s ease-in-out 0s; margin-left: 0;}
 .min-menu li .su-menu li a{padding:9px 15px;font-size: 14px;border-bottom: 1px solid #ededed; transition: all 0.2s ease-in-out 0s;color: #444;}
@@ -143,9 +145,9 @@ ul{list-style:none;padding-left:0}
 .list-wrpaaer{ height: 100%;}
 .list-aggregate li{  border-radius: 5px; margin-bottom: 0px; vertical-align: top; padding: 15px; color: #d80000;font-size: 14px;font-family: "open sans semibold"; letter-spacing: 0.3px;}
 .list-aggregate li a{color: #00719b; font-size: 18px; display: block; font-weight: 600; letter-spacing: 1px;}
-.header-text{display:block;margin-top:14px}
-.header-text h3{font-size:22px;font-weight:700;color:#002493;margin-top:0}
-.header-text span{display:block;font-size:14px;color:#5e5e5e;line-height:1}
+.header-text{display:block;margin-top:14px;}
+.header-text h3{font-size:30px;font-weight:700;color:#002493;margin-top:0;}
+.header-text span{display:block;font-size:14px;color:#5e5e5e;line-height:1;}
 .img-card{width:50px;height:50px;vertical-align:center;justify-content:center;margin-left:40%;margin-top:3px;}
 a{
 	color:#002493;

@@ -34,8 +34,8 @@
 			  </div>
 			  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
 				 <div class="header-text">
-					<h3>@lang('French and Spanish courses')</h3>
-					<span>@lang('MAXIMIZE YOUR LINGUISTIC POTENTIAL')</span>
+					<h3>@lang('Language Tuition')</h3>
+					<span>@lang('Learn naturally, Speak naturally')</span>
 				 </div>
 			  </div>
 			  
@@ -80,14 +80,15 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container-fluid">
 
     <!-- Content Row -->
     <div class="row mt-4">
       <!-- Sidebar Column -->
       <div class="col-lg-3 mb-4">
+	  <div class="container">
 		<ul class="min-menu">
-				<li class="sub-menu"><a href="{{url('/')}}">- @lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				<li class="sub-menu"><a href="{{url('/')}}"> @lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				 <ul class="su-menu" type="-">
 					<li><a href="{{ route('about_us') }}">@lang('About Us')</a></li>
 						<li><a href="{{ route('our_goals') }}">@lang('Our Goals')</a></li>
@@ -97,13 +98,13 @@
 					   <li><a href="{{ route('legal_documents') }}">@lang('Legal documents')</a></li>
 					</ul>
 				 </li>
-				 <li class="sub-menu"><a href="#">- @lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				 <li class="sub-menu"><a href="#"> @lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
 					<li><a href="{{ route('french') }}">@lang('French')</a></li>
 					<li><a href="{{ route('spanish') }}">@lang('Spanish')</a></li>
 				  </ul>
 				 </li>
-				<li class="sub-menu"><a href="#">- @lang('Classes')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				<li class="sub-menu"><a href="#"> @lang('Classes')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
 						<li><a href="{{ route('gallery') }}">@lang('Photo Gallery')</a></li>
 						<li><a href="{{ route('class_structure') }}">@lang('Class Structure')</a></li>
@@ -114,14 +115,14 @@
 						<li><a href="{{ route('faq') }}">@lang('FAQ')</a></li>
 					</ul>
 				 </li>
-				 <li class="sub-menu"><a href="javascript:void(0);">- @lang('Contact Us')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				 <li class="sub-menu"><a href="javascript:void(0);"> @lang('Contact Us')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
 					  <li><a href="{{ route('enquiry_form') }}">@lang('Enquiry Form')</a></li>
 					  <li><a href="{{ route('more_infos') }}">@lang('More Infos')</a></li>
 				  </ul>
 				 </li>
 				 <li class="sub-menu">
-					<a href="javascript:void(0);">- 
+					<a href="javascript:void(0);"> 
 					@if(app()->getLocale() == 'fr')
 						Français
 					@elseif(app()->getLocale() == 'es')
@@ -159,6 +160,7 @@
 			@lang('Leave voicemail at') <span class="gray-clr">000 000 00000</span><br/>
 			@lang('8am-7pm; 7 days a week') 
 		</div>
+		</div>
       </div>
       <!-- Content Column -->
       <div class="col-lg-9 mb-4">
@@ -170,7 +172,7 @@
   
   <!-- Footer -->
   <footer class="py-5 bg-lite colorline">
-	  <div class="container">
+	  <div class="container-fluid">
 		 <div class="row">
 
 			 <div class="col-md-4">
