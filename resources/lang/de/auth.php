@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -13,6 +12,6 @@ return [
     |
     */
 
-    'failed' => 'Dieses Konto existiert nicht oder die Daten wurden falsch eingegeben.',
-    'throttle' => 'Zu viele Login-Versuche. Bitte probiere es in :seconds Sekunden noch einmal.',
+    'failed'   => 'Diese Kombination aus Zugangsdaten wurde nicht in unserer Datenbank gefunden.',
+    'throttle' => 'Zu viele Loginversuche. Versuchen Sie es bitte in :seconds Sekunden nochmal.',
 ];
