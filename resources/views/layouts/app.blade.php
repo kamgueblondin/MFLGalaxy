@@ -88,7 +88,7 @@
       <div class="col-lg-3 mb-4">
 	  <div class="container">
 		<ul class="min-menu">
-				<li class="sub-menu"><a href="{{url('/')}}"> @lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				<li class="sub-menu" style="color:#002493;"><a href="{{url('/')}}" style="color:#002493;"> @lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				 <ul class="su-menu" type="-">
 					<li><a href="{{ route('about_us') }}">@lang('About Us')</a></li>
 						<li><a href="{{ route('our_goals') }}">@lang('Our Goals')</a></li>
@@ -98,13 +98,13 @@
 					   <li><a href="{{ route('legal_documents') }}">@lang('Legal documents')</a></li>
 					</ul>
 				 </li>
-				 <li class="sub-menu"><a href="#"> @lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				 <li class="sub-menu" style="color:#002493;"><a href="#" style="color:#002493;"> @lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
 					<li><a href="{{ route('french') }}">@lang('French')</a></li>
 					<li><a href="{{ route('spanish') }}">@lang('Spanish')</a></li>
 				  </ul>
 				 </li>
-				<li class="sub-menu"><a href="#"> @lang('Classes')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				<li class="sub-menu" style="color:#002493;"><a href="#" style="color:#002493;"> @lang('Classes')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
 						<li><a href="{{ route('gallery') }}">@lang('Photo Gallery')</a></li>
 						<li><a href="{{ route('class_structure') }}">@lang('Class Structure')</a></li>
@@ -115,14 +115,14 @@
 						<li><a href="{{ route('faq') }}">@lang('FAQ')</a></li>
 					</ul>
 				 </li>
-				 <li class="sub-menu"><a href="javascript:void(0);"> @lang('Contact Us')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				 <li class="sub-menu" style="color:#002493;"><a href="javascript:void(0);" style="color:#002493;"> @lang('Contact Us')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
 					  <li><a href="{{ route('enquiry_form') }}">@lang('Enquiry Form')</a></li>
 					  <li><a href="{{ route('more_infos') }}">@lang('More Infos')</a></li>
 				  </ul>
 				 </li>
-				 <li class="sub-menu">
-					<a href="javascript:void(0);"> 
+				 <li class="sub-menu" style="color:#002493;">
+					<a href="javascript:void(0);" style="color:#002493;"> 
 					@if(app()->getLocale() == 'fr')
 						Français
 					@elseif(app()->getLocale() == 'es')
