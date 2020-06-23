@@ -155,7 +155,7 @@
 				 </li>
              </ul>
 		<div class="txt-h-right mt-2"> 
-			@lang('Click') <span class="gray-clr"><a href="#">@lang('here') </a></span>@lang('to submit enquiry')<br/>
+			@lang('Click') <span class="gray-clr"><a href="{{ route('enquiry_form') }}">@lang('here') </a></span>@lang('to submit enquiry')<br/>
 			@lang('Please email us at') <span class="gray-clr">contact@mflgalaxy.com</span><br/>
 			@lang('Don\'t forget to put your phone number in the email')<br/>
 			@lang('Leave voicemail at') <span class="gray-clr">000 000 00000</span><br/>
