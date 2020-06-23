@@ -19,7 +19,7 @@
     <hr>
 
     <!-- Date/Time -->
-    <p>Posted on June 23, 2020 at 12:00 PM</p>
+    <p>Posted on June 23, 2020 at 12:00 AM</p>
 
     <hr>
 
