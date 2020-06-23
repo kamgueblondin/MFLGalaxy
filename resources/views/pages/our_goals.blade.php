@@ -19,27 +19,23 @@
     <hr>
 
     <!-- Date/Time -->
-    <p>Posted on January 1, 2017 at 12:00 PM</p>
+    <p>Posted on June 23, 2020 at 12:00 PM</p>
 
     <hr>
 
     <!-- Post Content -->
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+    <p class="lead">If your time is short or you would prefer a relaxed way of learning without the need to travel, then maybe online language tuition may suit you?  The advantages of this are that you still get one to one support from your tutor, but you can do so from the comfort of your own home, office or even somewhere else.  Lessons can also be provided at different lengths to suit you.</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+    <p>MFL Galaxy  can offer tuition via Skype or ZOOM  in French, German, or Spanish,.  All carried out by an experienced and fully qualified teacher.  The beauty of this is that we can still be of service to you regardless of whether you live in the UK or abroad. </p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+    <p>Payment for online tuition can be made via the PayPal or via bank transfer. </p>
 
     <blockquote class="blockquote">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
         <footer class="blockquote-footer">Someone famous in
         <cite title="Source Title">Source Title</cite>
         </footer>
     </blockquote>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
 
     <hr>
 
