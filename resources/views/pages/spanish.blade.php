@@ -3,7 +3,7 @@
 @section('content')
      <!-- Page Heading/Breadcrumbs -->
      <h1 class="mt-2 mb-2">@lang('Spanish')
-      <small>Subheading</small>
+      <small></small>
     </h1>
 
     <ol class="breadcrumb">
@@ -16,12 +16,12 @@
     <div class="row">
 
       <div class="col-md-8">
-        <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+        <img class="img-fluid" src="{{asset('images/img/spanish.png')}}" alt="">
       </div>
 
       <div class="col-md-4">
-        <h3 class="my-3">Project Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+        <h3 class="my-3">@lang('Why Learn Spanish')</h3>
+        <p>@lang('Being a phonetic language, Spanish is considered an easy language to learn, and after one Spanish class you will notice a significant improvement - so much so that most of our learners continue on to the next level to become enthusiastic Spanish speakers. Iif you\'re heading to a Spanish-speaking location on holiday or for business, our Spanish language courses are the perfect preparation. Our courses will give you the essential language skills you need, as well as the confidence to use them. Learn Spanish and you will be able to communicate with over 500 million speakers across the world. There is no better time than now to lear Spanish and take classes with MFL Galaxy.')</p>
         <h3 class="my-3">Project Details</h3>
         <ul>
           <li>Lorem Ipsum</li>

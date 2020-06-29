@@ -156,9 +156,9 @@
              </ul>
 		<div class="txt-h-right mt-2"> 
 			@lang('Click') <span class="gray-clr"><a href="{{ route('enquiry_form') }}">@lang('here') </a></span>@lang('to submit enquiry')<br/>
-			@lang('Please email us at') <span class="gray-clr">contact@mflgalaxy.com</span><br/>
+			@lang('Please email us at') <span class="gray-clr"><a href="#"> Mfl_galaxy2020@yahoo.com</a></span><br/>
 			@lang('Don\'t forget to put your phone number in the email')<br/>
-			@lang('Leave voicemail at') <span class="gray-clr">000 000 00000</span><br/>
+			@lang('Leave voicemail at') <span class="gray-clr">+442085938136 / 00447437465586</span><br/>
 			@lang('8am-7pm; 7 days a week') 
 		</div>
 		</div>
