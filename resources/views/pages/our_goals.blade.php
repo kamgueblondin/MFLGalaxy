@@ -12,33 +12,54 @@
       </li>
       <li class="breadcrumb-item active">@lang('Our Goals')</li>
     </ol>
+	<div class="row">
 
-    <!-- Preview Image -->
-    <img class="img-fluid rounded" src="{{asset('images/img/our_goals.jfif')}}" alt="">
+      <div class="col-md-8">
+        <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+      </div>
 
-    <hr>
+      <div class="col-md-4">
+        <h3 class="my-3">@lang('Our Goals')</h3> 
+		<p class="lead">@lang('If your time is short or you would prefer a relaxed way of learning without the need to travel, then maybe online language tuition may suit you?  The advantages of this are that you still get one to one support from your tutor, but you can do so from the comfort of your own home, office or even somewhere else.  Lessons can also be provided at different lengths to suit you.')</p>
 
-    <!-- Date/Time -->
-    <p>@lang('Posted on June 23, 2020 at 12:00 AM')</p>
+      </div>
 
-    <hr>
-
-    <!-- Post Content -->
-    <p class="lead">@lang('If your time is short or you would prefer a relaxed way of learning without the need to travel, then maybe online language tuition may suit you?  The advantages of this are that you still get one to one support from your tutor, but you can do so from the comfort of your own home, office or even somewhere else.  Lessons can also be provided at different lengths to suit you.')</p>
-
+    </div>
+    <!-- /.row -->
+	<hr>
     <p>@lang('MFL Galaxy  can offer tuition via Skype or ZOOM  in French, German, or Spanish,.  All carried out by an experienced and fully qualified teacher.  The beauty of this is that we can still be of service to you regardless of whether you live in the UK or abroad.') </p>
 
     <p>@lang('Payment for online tuition can be made via the PayPal or via bank transfer.') </p>
 
-    <blockquote class="blockquote">
-        <footer class="blockquote-footer">Someone famous in
-        <cite title="Source Title">Source Title</cite>
-        </footer>
-    </blockquote>
+    <div class="row">
 
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
 
-    <hr>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
 
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
 
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+   
     </div>
 @endsection

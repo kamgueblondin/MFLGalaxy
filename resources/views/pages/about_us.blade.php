@@ -15,7 +15,7 @@
     <!-- Intro Content -->
     <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="{{asset('images/img/images.jfif')}}" alt="">
+        <img  class="img-fluid rounded mb-4" src="http://placehold.it/750x1000" alt="">
       </div>
       <div class="col-lg-6">
         <h2>@lang('About Us')</h2>
