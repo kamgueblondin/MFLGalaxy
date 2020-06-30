@@ -30,9 +30,9 @@
   <div class="heading-mrg mb-1">
 	 <div class="container">
 		<div class="row">
-			  <div class="col-12 col-sm-4 col-md-5 col-lg-4"><a href="#"> <img class="logo" src="{{asset('images/logo.png') }}" class="class-ace-logo" alt="ACE 11+ Tuition" /></a>
+			  <div class="col-12 col-sm-4 col-md-5 col-lg-4 d-flex justify-content-center justify-content-md-start"><a href="#"> <img class="logo" src="{{asset('images/logo.png') }}" class="class-ace-logo" alt="ACE 11+ Tuition" /></a>
 			  </div>
-			  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+			  <div class="col-12 col-sm-7 col-md-4 col-lg-4 d-flex justify-content-center justify-content-md-end">
 				 <div class="header-text">
 					<h3>@lang('Language Tuition')</h3>
 					<span>@lang('Learn naturally, Speak naturally')</span>
