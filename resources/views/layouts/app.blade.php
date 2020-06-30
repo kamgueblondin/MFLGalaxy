@@ -39,7 +39,7 @@
 				 </div>
 			  </div>
 			  
-			  <div class="d-none .d-sm-none d-md-block .d-lg-block .d-xl-block col-md-3 col-lg-4 text-right">
+			  <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-4 text-right">
 				  
 				<div class="list-group">
 					@foreach(config('app.locales') as $locale)
@@ -65,8 +65,8 @@
   <nav class="navbar navbar-expand-lg navbar-lite bg-lite colorline">
     <div class="container">
       <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="fa fa-cogs"></span>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mySidenav" aria-controls="mySidenav" aria-expanded="false" aria-label="Toggle navigation">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -86,8 +86,8 @@
     <div class="row mt-4">
       <!-- Sidebar Column -->
       <div class="col-lg-3 mb-4">
-	  <div class="container">
-		<ul class="min-menu">
+	  <div class="container  navbar-collapse" id="mySidenav">
+		<ul class="min-menu navbar-nav">
 				<li class="sub-menu" style="color:#002493;"><a href="{{url('/')}}" style="color:#002493;"> @lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				 <ul class="su-menu" type="-">
 					<li><a href="{{ route('about_us') }}">@lang('About Us')</a></li>
@@ -154,7 +154,7 @@
 				  </ul>
 				 </li>
              </ul>
-		<div class="txt-h-right mt-2"> 
+		<div class="txt-h-right mt-2 d-none d-sm-none d-md-none d-lg-block d-xl-block"> 
 			@lang('Click') <span class="gray-clr"><a href="{{ route('enquiry_form') }}">@lang('here') </a></span>@lang('to submit enquiry')<br/>
 			@lang('Please email us at') <span class="gray-clr"><a href="#"> Mfl_galaxy2020@yahoo.com</a></span><br/>
 			@lang('Don\'t forget to put your phone number in the email')<br/>
@@ -203,7 +203,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
   <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
 </body>
 
 </html>

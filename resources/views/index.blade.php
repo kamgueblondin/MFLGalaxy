@@ -62,7 +62,7 @@
 
 		<!-- Marketing Icons Section -->
 		<div class="row">
-		  <div class="col-lg-6 col-md-2 mb-4">
+		  <div class="col-lg-6 mb-4">
 			<div class="card h-100 box-3">
 			  <h4 class="card-header bg-white">@lang('WHAT WE DO')</h4>
 			  <div class="card-body">
