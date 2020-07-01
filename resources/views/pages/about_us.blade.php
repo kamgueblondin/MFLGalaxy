@@ -15,7 +15,7 @@
     <!-- Intro Content -->
     <div class="row">
       <div class="col-lg-6">
-        <img  class="img-fluid rounded mb-4" src="http://placehold.it/750x1000" alt="">
+        <img  class="img-fluid rounded mb-4" src="{{ asset('images/img/about.jpg') }}" alt="About us">
       </div>
       <div class="col-lg-6">
         <h2>@lang('About Us')</h2>
@@ -33,7 +33,7 @@
     <div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+          <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
             <h6 class="card-subtitle mb-2 text-muted">Position</h6>
@@ -46,7 +46,7 @@
       </div>
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+          <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
             <h6 class="card-subtitle mb-2 text-muted">Position</h6>
@@ -59,7 +59,7 @@
       </div>
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+          <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
             <h6 class="card-subtitle mb-2 text-muted">Position</h6>
@@ -73,26 +73,25 @@
     </div>
     <!-- /.row -->
 
-    <!-- Our Customers -->
-    <h2>Our Customers</h2>
+    <!-- Our test -->
     <div class="row">
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        <img class="img-fluid" src="{{ asset('images/img/custumers.jpg') }}" alt="custumers">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        <img class="img-fluid" src="{{ asset('images/img/custumers.jpg') }}" alt="custumers">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        <img class="img-fluid" src="{{ asset('images/img/custumers.jpg') }}" alt="custumers">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        <img class="img-fluid" src="{{ asset('images/img/custumers.jpg') }}" alt="custumers">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        <img class="img-fluid" src="{{ asset('images/img/custumers.jpg') }}" alt="custumers">
       </div>
       <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        <img class="img-fluid" src="{{ asset('images/img/custumers.jpg') }}" alt="custumers">
       </div>
     </div>
     <!-- /.row -->

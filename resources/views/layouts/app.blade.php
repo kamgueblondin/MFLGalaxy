@@ -86,17 +86,17 @@
     <div class="row mt-4">
       <!-- Sidebar Column -->
       <div class="col-lg-3 mb-4">
-	  <div class="container  navbar-collapse" id="mySidenav">
+	  <div class="container  navbar-collapse collapse d-lg-block d-xl-block" id="mySidenav">
 		<ul class="min-menu navbar-nav">
-				<li class="sub-menu" style="color:#002493;"><a href="{{url('/')}}" style="color:#002493;"> @lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
-				 <ul class="su-menu" type="-">
+				<li class="sub-menu" style="color:#002493;"><a href="{{url('/')}}" style="color:#002493;" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				 <ul class="su-menu" type="-" aria-labelledby="dropdownMenu2">
 					<li><a href="{{ route('about_us') }}">@lang('About Us')</a></li>
-						<li><a href="{{ route('our_goals') }}">@lang('Our Goals')</a></li>
-						<li><a href="{{ route('our_services') }}">@lang('Our Services')</a></li>
-						<li><a href="{{ route('testimonials') }}">@lang('Testimonials')</a></li>
-						<li><a href="{{ route('blogs') }}">@lang('Blogs')</a></li>
-					   <li><a href="{{ route('legal_documents') }}">@lang('Legal documents')</a></li>
-					</ul>
+					<li><a href="{{ route('our_goals') }}">@lang('Our Goals')</a></li>
+					<li><a href="{{ route('our_services') }}">@lang('Our Services')</a></li>
+					<li><a href="{{ route('testimonials') }}">@lang('Testimonials')</a></li>
+					<li><a href="{{ route('blogs') }}">@lang('Blogs')</a></li>
+				   <li><a href="{{ route('legal_documents') }}">@lang('Legal documents')</a></li>
+				</ul>
 				 </li>
 				 <li class="sub-menu" style="color:#002493;"><a href="#" style="color:#002493;"> @lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
