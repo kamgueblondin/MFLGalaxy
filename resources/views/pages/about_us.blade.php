@@ -3,7 +3,7 @@
 @section('content')
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-2 mb-2">@lang('About Us')
-      <small>Subheading</small>
+      
     </h1>
 
     <ol class="breadcrumb">

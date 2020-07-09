@@ -71,7 +71,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
 		  <li class="nav-item"><a class="nav-link btn btn-social-icon btn-facebook" target="blank" href="#"><span class="fa fa-facebook"></span></a></li>
-		  <li class="nav-item"><a class="nav-link btn btn-social-icon btn-twitter" target="blank" href="#"><span class="fa fa-twitter"></span></a></li>
+		  <li class="nav-item"><a class="nav-link btn btn-social-icon btn-twitter" target="blank" href="https://twitter.com/GalaxyMfl"><span class="fa fa-twitter"></span></a></li>
 		  <li class="nav-item"><a class="nav-link btn btn-social-icon btn-linked" target="blank" href="#"><span class="fa fa-linkedin"></span></a></li>
 		  <li class="nav-item"><a class="nav-link btn btn-social-icon btn-gplus" target="blank" href="#"><span class="fa fa-google-plus"></span></a></li>
         </ul>
@@ -95,7 +95,7 @@
 					<li><a href="{{ route('our_services') }}">@lang('Our Services')</a></li>
 					<li><a href="{{ route('testimonials') }}">@lang('Testimonials')</a></li>
 					<li><a href="{{ route('blogs') }}">@lang('Blogs')</a></li>
-				   <li><a href="{{ route('legal_documents') }}">@lang('Legal documents')</a></li>
+				   
 				</ul>
 				 </li>
 				 <li class="sub-menu" style="color:#002493;"><a href="#" style="color:#002493;"> @lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
@@ -109,10 +109,7 @@
 				  <ul class="su-menu">
 						<li><a href="{{ route('gallery') }}">@lang('Photo Gallery')</a></li>
 						<li><a href="{{ route('class_structure') }}">@lang('Class Structure')</a></li>
-						<li><a href="{{ route('extension_classes') }}">@lang('Extension Classes')</a></li>
-						<li><a href="{{ route('adult_classes') }}">@lang('Adult Classes')</a></li>
-						<li><a href="{{ route('target_schools') }}">@lang('Target Schools')</a></li>
-						<li><a href="{{ route('useful_links') }}">@lang('Useful Links')</a></li>
+
 						<li><a href="{{ route('faq') }}">@lang('FAQ')</a></li>
 					</ul>
 				 </li>
@@ -157,9 +154,8 @@
 		<div class="txt-h-right mt-2 d-none d-sm-none d-md-none d-lg-block d-xl-block"> 
 			@lang('Click') <span class="gray-clr"><a href="{{ route('enquiry_form') }}">@lang('here') </a></span>@lang('to submit enquiry')<br/>
 			@lang('Please email us at') <span class="gray-clr"><a href="#"> Mfl_galaxy2020@yahoo.com</a></span><br/>
-			@lang('Don\'t forget to put your phone number in the email')<br/>
-			@lang('Leave voicemail at') <span class="gray-clr">+442085938136 / 00447437465586</span><br/>
-			@lang('8am-7pm; 7 days a week') 
+			@lang('Put your phone number in the email')<br/>
+			@lang('Leave voicemail at') <span class="gray-clr">00442085938136 / 00447437465586</span><br/>
 		</div>
 		</div>
       </div>
@@ -186,7 +182,7 @@
 					 <ul>
 						<li>@lang('Follow us')</li>
 						<li> <a target="blank"  href="#"> <i class="fa fa-facebook"></i></a></li>
-						<li> <a target="blank"  href="#"><i class="fa fa-twitter"></i></a></li>
+						<li> <a target="blank"  href="https://twitter.com/GalaxyMfl"><i class="fa fa-twitter"></i></a></li>
 						<li> <a  target="blank" href="#"><i class="fa fa-linkedin"></i></a></li>
 						<li> <a target="blank"  href="#"><i class="fa fa-google-plus"></i></a></li>
 					 </ul>

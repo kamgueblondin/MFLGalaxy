@@ -3,7 +3,7 @@
 @section('content')
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-2 mb-2">@lang('Enquiry Form')
-      <small>Subheading</small>
+    
     </h1>
 
     <ol class="breadcrumb">
@@ -28,15 +28,14 @@
           <br>
         </p>
         <p>
-          <abbr title="Phone">P</abbr>: (123) 456-7890
+          <abbr title="Phone">Phone</abbr>: (123) 456-7890
         </p>
         <p>
-          <abbr title="Email">E</abbr>:
-          <a href="mailto:name@example.com">name@example.com
-          </a>
+          <abbr title="Email">Email</abbr>:
+          <a href="Mfl_galaxy2020@yahoo.com">Mfl_galaxy2020@yahoo.com</a>
         </p>
         <p>
-          <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
+          <abbr title="Hours">Hours</abbr>: Monday - Friday: 8:00AM to 5:00PM
         </p>
       </div>
     </div>
