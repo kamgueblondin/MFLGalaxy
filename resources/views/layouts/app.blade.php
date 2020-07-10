@@ -30,7 +30,7 @@
   <div class="heading-mrg mb-1">
 	 <div class="container">
 		<div class="row">
-			  <div class="col-12 col-sm-4 col-md-5 col-lg-4 d-flex justify-content-center justify-content-md-start"><a href="#"> <img class="logo" src="{{asset('images/logo.png') }}" class="class-ace-logo" alt="ACE 11+ Tuition" /></a>
+			  <div class="col-12 col-sm-4 col-md-5 col-lg-4 d-flex justify-content-center justify-content-md-start"><a href="{{ url('/') }}"> <img class="logo" src="{{asset('images/logo.png') }}" class="class-ace-logo" alt="ACE 11+ Tuition" /></a>
 			  </div>
 			  <div class="col-12 col-sm-7 col-md-4 col-lg-4 d-flex justify-content-center justify-content-md-end">
 				 <div class="header-text">
@@ -39,9 +39,9 @@
 				 </div>
 			  </div>
 			  
-			  <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-4 text-right">
+			  <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-4 d-flex justify-content-right align-items-right">
 				  
-				<div class="list-group">
+				<div class="list-group text-right align-left">
 					@foreach(config('app.locales') as $locale)
 					<a href="{{ route('language', $locale) }}" style="text-decoration:none;" class="list-group-item nav-lang-size">
 						@if($locale == 'fr')
@@ -88,7 +88,7 @@
       <div class="col-lg-3 mb-4">
 	  <div class="container  navbar-collapse collapse d-lg-block d-xl-block" id="mySidenav">
 		<ul class="min-menu navbar-nav">
-				<li class="sub-menu" style="color:#002493;"><a href="{{url('/')}}" style="color:#002493;" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> @lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				<li class="sub-menu" style="color:#002493;"><a href="{{url('/')}}" style="color:#002493;"> @lang('Home')</a><span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				 <ul class="su-menu" type="-" aria-labelledby="dropdownMenu2">
 					<li><a href="{{ route('about_us') }}">@lang('About Us')</a></li>
 					<li><a href="{{ route('our_goals') }}">@lang('Our Goals')</a></li>
@@ -119,7 +119,7 @@
 					  <li><a href="{{ route('more_infos') }}">@lang('More Infos')</a></li>
 				  </ul>
 				 </li>
-				 <li class="sub-menu" style="color:#002493;">
+				 <li class="sub-menu d-block d-sm-block d-md-block d-lg-none d-xl-none" style="color:#002493;">
 					<a href="javascript:void(0);" style="color:#002493;"> 
 					@if(app()->getLocale() == 'fr')
 						Français
@@ -151,7 +151,7 @@
 				  </ul>
 				 </li>
              </ul>
-		<div class="txt-h-right mt-2 d-none d-sm-none d-md-none d-lg-block d-xl-block"> 
+		<div class="txt-h-right mt-2 d-none d-sm-none d-md-none d-lg-block d-xl-block mt-5"> 
 			@lang('Click') <span class="gray-clr"><a href="{{ route('enquiry_form') }}">@lang('here') </a></span>@lang('to submit enquiry')<br/>
 			@lang('Please email us at') <span class="gray-clr"><a href="#"> Mfl_galaxy2020@yahoo.com</a></span><br/>
 			@lang('Put your phone number in the email')<br/>

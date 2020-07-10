@@ -15,11 +15,11 @@
     <!-- Portfolio Item Row -->
     <div class="row">
 
-      <div class="col-md-8">
-        <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+      <div class="col-md-6">
+        <img class="img-fluid" src="{{ asset('images/img/berlin.jpg') }}" alt="German">
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-6">
         <h3 class="my-3"></h3>
         <p>@lang('First and foremost, learning French is the pleasure of learning a beautiful, rich, melodious language that is often called the language of love. French is also an analytical language that structures thought and develops critical thinking, which is a valuable skill for discussions and negociations').</p>
 		<p>@lang('French is, along with English, the only language spoken on all five continents. More than 220 million people speak French on all the five continents. French is a major language of international communication. It is the second most widely learned language after English and the sixth most widely spoken language in the world. French is also the second most widely taught language after English, and is taught on every continent. The OIF, an international organisation of French-speaking countries, is made up of 77 member States and governments. France also operates the biggest international network of cultural institutes, which run French-language course for close on a million learners').</p>

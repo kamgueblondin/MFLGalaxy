@@ -14,11 +14,11 @@
     </ol>
 	<div class="row">
 
-      <div class="col-md-8">
+      <div class="col-md-6">
         <img class="img-fluid" src="{{ asset('images/img/gold.jpg') }}" alt="our gold">
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-6">
         <h3 class="my-3">@lang('Our Goals')</h3> 
 		<p class="lead">@lang('If your time is short or you would prefer a relaxed way of learning without the need to travel, then maybe online language tuition may suit you?  The advantages of this are that you still get one to one support from your tutor, but you can do so from the comfort of your own home, office or even somewhere else.  Lessons can also be provided at different lengths to suit you.')</p>
 
