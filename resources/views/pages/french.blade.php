@@ -16,7 +16,7 @@
     <div class="row">
 
       <div class="col-md-8">
-        <img class="img-fluid" src="{{ asset('images/img/ger.jpg') }}" alt="French">
+        <img class="img-fluid" src="{{ asset('images/img/eiffel 750_500.jpg') }}" alt="French">
       </div>
 
       <div class="col-md-4">
@@ -52,7 +52,7 @@
           <h4 class="card-header">@lang('Secondary and Universities')</h4>
           <div class="card-body">
             <p class="card-text">@lang('An advantage for studying in France').</p>
-			<p>@lang('Speaking French opens up opportunities for higher education at some of France\'s best-known universities (the Sorbonne, Pierre Marie Curie University, etc.) or elites grandes écoles (HEC, Polytechnique, ESSEG), often on very favourable financial terms. Students with a good level of French may be eligible to apply for a French government grant to enrol on a postgraduate course of their choice in France, leading to an internationally recognised postgraduate degree').</p>
+			<p>@lang('Speaking French opens up opportunities for higher education at some of France\'s best-known universities (the Sorbonne, Pierre Marie Curie University, etc.) or elite high schools (HEC, Polytechnique, ESSEG), often on very favourable financial terms. Students with a good level of French may be eligible to apply for a French government grant to enrol on a postgraduate course of their choice in France, leading to an internationally recognised postgraduate degree').</p>
           </div>
           <div class="card-footer">
             
@@ -64,7 +64,7 @@
           <h4 class="card-header">@lang('Adult Classes')</h4>
           <div class="card-body">
             <p class="card-text">@lang('Visiting Paris and the rest of France').</p>
-			<p>@lang('France is the workd\'s top tourist destination and attracts more than 79,5 million visitors a year. The ability to speak even a little French makes it so much more enjoyable to visit Paris and all the regions of France (from the mild climes of the Cote d\'Azur to the snow-capped peaks of the Alps via the rugged coastline of Brittany) and offers insights into French culture, mentality and way of life. French also comes in handy when travelling to Africa, Switzerland, Canada, Monaco, the Seychelles and other places').</p>
+			<p>@lang('France is the world\'s top tourist destination and attracts more than 79,5 million visitors a year. The ability to speak even a little French makes it so much more enjoyable to visit Paris and all the regions of France (from the mild climes of the Cote d\'Azur to the snow-capped peaks of the Alps via the rugged coastline of Brittany) and offers insights into French culture, mentality and way of life. French also comes in handy when travelling to Africa, Switzerland, Canada, Monaco, the Seychelles and other places').</p>
           </div>
           <div class="card-footer">
             

@@ -23,12 +23,12 @@
       <div class="col-lg-4 mb-4">
         <h3>Contact Details</h3>
         <p>
-          3481 Melrose Place
-          <br>Beverly Hills, CA 90210
+           Place
+          <br>
           <br>
         </p>
         <p>
-          <abbr title="Phone">Phone</abbr>: (123) 456-7890
+          <abbr title="Phone">Phone</abbr>: 00 442 085 938 136
         </p>
         <p>
           <abbr title="Email">Email</abbr>:

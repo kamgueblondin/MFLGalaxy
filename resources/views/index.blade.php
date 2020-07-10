@@ -110,10 +110,10 @@
 
 						</li>
 						<li>
-							 @lang('COVID-19 Update: Due to the recent coronavirus pandemic, we have started online classes and have received wonderful feedback from the existing tuition students. See class schedule for timings').
+							 @lang('With millions of people bein forced to stay home to help stop the spread of COVID-19 during recent months, MFL Galxy has found creative ways to continue online tuition through Zoom').
 						</li>
 						<li>
-							 @lang('Good news !! We have spaces as all classes are now conducted ONLINE').
+							 @lang('As from now on, all our classes and made using Zoom').
 
 						</li>
 					</ul>

@@ -41,19 +41,19 @@
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#">
-          <img class="img-fluid" src="{{ asset('images/img/custumers.jpg') }}" alt="custumers">
+          <img class="img-fluid" src="{{ asset('images/img/custumers_sp.jpg') }}" alt="custumers">
         </a>
       </div>
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#">
-          <img class="img-fluid" src="{{ asset('images/img/custumers.jpg') }}" alt="custumers">
+          <img class="img-fluid" src="{{ asset('images/img/custumers_s.jpg') }}" alt="custumers">
         </a>
       </div>
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#">
-          <img class="img-fluid" src="{{ asset('images/img/custumers.jpg') }}" alt="custumers">
+          <img class="img-fluid" src="{{ asset('images/img/téléchargement.jpg') }}" alt="custumers">
         </a>
       </div>
 
