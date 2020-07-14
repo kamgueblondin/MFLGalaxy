@@ -153,9 +153,9 @@
              </ul>
 		<div class="txt-h-right mt-2 d-none d-sm-none d-md-none d-lg-block d-xl-block mt-5"> 
 			@lang('Click') <span class="gray-clr"><a href="{{ route('enquiry_form') }}">@lang('here') </a></span>@lang('to submit enquiry')<br/>
-			@lang('Please email us at') <span class="gray-clr"><a href="#"> Mfl_galaxy2020@yahoo.com</a></span><br/>
+			@lang('Please email us at') <span class="gray-clr"><a href="mailto:Mfl_galaxy2020@yahoo.com"> Mfl_galaxy2020@yahoo.com</a></span><br/>
 			@lang('Put your phone number in the email')<br/>
-			@lang('Leave voicemail at') <span class="gray-clr">00442085938136 / 00447437465586</span><br/>
+			@lang('Leave voicemail at') <span class="gray-clr">00447437465586</span><br/>
 		</div>
 		</div>
       </div>
@@ -189,7 +189,7 @@
 				  </div>
 			 </div>
 			 <div class="col-md-4 d-none d-sm-none d-lg-block d-md-block d-xl-block">
-				  <div class="developed-right-txt">@lang('Website Developed by') <a href="#" target="_blank"></a></div>
+				  <div class="developed-right-txt">@lang('') <a href="#" target="_blank"></a></div>
 			 </div>
 		 </div>
 	  </div>

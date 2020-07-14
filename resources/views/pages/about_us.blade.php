@@ -33,7 +33,7 @@
     <div class="row">
       <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
+          <img class="card-img-top" src="{{ asset('images/image/IMG-20200706-WA0033.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
             <h6 class="card-subtitle mb-2 text-muted">MD</h6>
@@ -46,7 +46,7 @@
       </div>
       <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
+          <img class="card-img-top" src="{{ asset('images/image/IMG-20200706-WA0033.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
             <h6 class="card-subtitle mb-2 text-muted">Secretary</h6>
@@ -59,7 +59,7 @@
       </div>
       <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
+          <img class="card-img-top" src="{{ asset('images/image/IMG-20200706-WA0033.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
             <h6 class="card-subtitle mb-2 text-muted">Teacher Spanish</h6>
@@ -72,7 +72,7 @@
       </div>
       <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
+          <img class="card-img-top" src="{{ asset('images/image/IMG-20200706-WA0033.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
             <h6 class="card-subtitle mb-2 text-muted">Teacher German</h6>
