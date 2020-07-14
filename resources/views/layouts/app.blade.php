@@ -39,24 +39,24 @@
 				 </div>
 			  </div>
 			  
-			  <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-4 d-flex justify-content-right align-items-right">
+			  <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-4 text-right">
 				  
-				<div class="list-group text-right align-left">
-					@foreach(config('app.locales') as $locale)
-					<a href="{{ route('language', $locale) }}" style="text-decoration:none;" class="list-group-item nav-lang-size">
-						@if($locale == 'fr')
-							Français
-						@elseif($locale == 'es')
-							Español
-						@elseif($locale == 'de')
-							Deutsch
-						@else
-							English
-						@endif
-					</a>
-					@endforeach
+					<div class="list-group">
+						@foreach(config('app.locales') as $locale)
+						<a href="{{ route('language', $locale) }}" style="text-decoration:none;" class="list-group-item nav-lang-size">
+							@if($locale == 'fr')
+								Français
+							@elseif($locale == 'es')
+								Español
+							@elseif($locale == 'de')
+								Deutsch
+							@else
+								English
+							@endif
+						</a>
+						@endforeach
+					</div>
 				</div>
-			   </div>
 		</div>
 	 </div>
   </div>
@@ -168,31 +168,19 @@
   <!-- /.container -->
   
   <!-- Footer -->
-  <footer class="py-5 bg-lite colorline">
-	  <div class="container-fluid">
-		 <div class="row">
 
-			 <div class="col-md-4">
-
-				 <div class="copy-pading m-0">Copyright &copy; {{ date('Y') }} <a href="{{ route('login') }}" title="@lang('Login')">MFLGalaxy</a> @lang('Right Reserved'). </div>
-
-			 </div>
-			 <div class="col-md-4">
-				 <div class="cont-footer">
-					 <ul>
-						<li>@lang('Follow us')</li>
-						<li> <a target="blank"  href="#"> <i class="fa fa-facebook"></i></a></li>
-						<li> <a target="blank"  href="https://twitter.com/GalaxyMfl"><i class="fa fa-twitter"></i></a></li>
-						<li> <a  target="blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li> <a target="blank"  href="#"><i class="fa fa-google-plus"></i></a></li>
-					 </ul>
-				  </div>
-			 </div>
-			 <div class="col-md-4 d-none d-sm-none d-lg-block d-md-block d-xl-block">
-				  <div class="developed-right-txt">@lang('') <a href="#" target="_blank"></a></div>
-			 </div>
+  <footer class="py-2 bg-lite colorline">
+	  <div class="container-fluid text-center">
+			<div class="">Copyright &copy; {{ date('Y') }} <a href="{{ route('login') }}" title="@lang('Login')">MFLGalaxy</a> @lang('Right Reserved'). </div>
+			<div class="cont-footer d-flex">
+				<ul>
+				<li> <a target="blank"  href="#"> <i class="fa fa-facebook"></i></a></li>
+				<li> <a target="blank"  href="https://twitter.com/GalaxyMfl"><i class="fa fa-twitter"></i></a></li>
+				<li> <a  target="blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li> <a target="blank"  href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+			</div>
 		 </div>
-	  </div>
   </footer>
   <!-- /foot -->
 
