@@ -31,39 +31,52 @@
     <h2>Our Team</h2>
 
     <div class="row">
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
           <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+            <h6 class="card-subtitle mb-2 text-muted">MD</h6>
+            <p class="card-text">Teacher French KS2, KS3, KS4, KS5</p>
           </div>
           <div class="card-footer">
             <a href="#">name@example.com</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
           <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+            <h6 class="card-subtitle mb-2 text-muted">Secretary</h6>
+            <p class="card-text"></p>
           </div>
           <div class="card-footer">
             <a href="#">name@example.com</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
           <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
           <div class="card-body">
             <h4 class="card-title">Team Member</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+            <h6 class="card-subtitle mb-2 text-muted">Teacher Spanish</h6>
+            <p class="card-text">KS3, KS4, KS5</p>
+          </div>
+          <div class="card-footer">
+            <a href="#">name@example.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="{{ asset('images/img/team.jpg') }}" alt="team">
+          <div class="card-body">
+            <h4 class="card-title">Team Member</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Teacher German</h6>
+            <p class="card-text">KS3, KS4, KS5</p>
           </div>
           <div class="card-footer">
             <a href="#">name@example.com</a>

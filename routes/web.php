@@ -41,6 +41,8 @@ Auth::routes();
 Route::get('language/{lang}', 'HomeController@language')->name('language');
 Route::get('/home', 'DashboardController@index')->name('home');
 
+Route::resource('information', 'informationcontroller');
+
 Route::prefix('admin')->namespace('Back')->group(function () {
     Route::name('admin')->get('/', 'AdminController@index');
 	
