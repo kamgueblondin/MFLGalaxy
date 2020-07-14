@@ -47,9 +47,9 @@ ul.navbar-nav.for-social-width .btn {  width: 40px;}
 .btn-gplus:hover{color:#fff!important;background-color:#bc382c!important}
 .btn-gplus:focus,.btn-gplus.focus{color:#fff!important;background-color:#dd4e41}
 
-/*.price-i1-right{width:55%}*/
-.cont-footer ul{width:215px;display:block; margin: auto;}
-.cont-footer ul li{float:left;margin-left:10px;font-size:20px}
+/*.price-i1-right{width:55%} margin-left: 45%;*/
+.cont-footer ul{display:block; margin: auto;}
+.cont-footer ul li{float:left;margin-left:50px;font-size:20px}
 .cont-footer{width: 100%; margin-bottom: 2px; margin-top: 4px;}
 .cont-footer ul li a{color:#575757}
 .cont-footer ul li a:hover{color:#03abf2}
@@ -62,8 +62,8 @@ ul.navbar-nav.for-social-width .btn {  width: 40px;}
 .title-sub-tx{font-size:14px;color:#6c6f74}
 .none-defult{display:block}
 .cont-footer {display: inline-block;float: right;margin-bottom: 6px;margin-top: 10px;}
-.cont-footer ul{width:215px;display:block; margin: auto;}
-.cont-footer ul li{float:left;margin-left:10px;font-size:20px}
+.cont-footer ul{display:block; margin: auto;align-content: center;text-align: center;}
+.cont-footer ul li{float:center;margin-left:10px;font-size:20px}
 
 .nav-lang-size{
 	height: 30px;
