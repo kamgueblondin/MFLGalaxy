@@ -51,7 +51,7 @@
 							@elseif($locale == 'de')
 								Deutsch
 							@else
-								English
+								English &nbsp
 							@endif
 						</a>
 						@endforeach

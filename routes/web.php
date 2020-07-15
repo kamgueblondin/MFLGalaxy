@@ -35,6 +35,7 @@ Route::get('/useful_links', "PagesController@useful_links")->name('useful_links'
 Route::get('/faq', "PagesController@faq")->name('faq');
 Route::get('/enquiry_form', "PagesController@enquiry_form")->name('enquiry_form');
 Route::get('/more_infos', "PagesController@more_infos")->name('more_infos');
+Route::post('/faq', 'HomeController@storeFaq')->name('faq');
 
 Auth::routes();
 

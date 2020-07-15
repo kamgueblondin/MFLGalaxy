@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\FaqAide;
+
 
 class HomeController extends Controller
 {
@@ -14,6 +16,14 @@ class HomeController extends Controller
     {
         $locale = in_array($locale, config('app.locales')) ? $locale : config('app.fallback_locale');
         session(['locale' => $locale]);
+        return back();
+    }
+    public function storeFaq(Request $request){
+        $faq = new FaqAide;
+        $faq->name = $request->name;
+        $faq->email = $request->email;
+        $faq->message = $request->message;
+        $faq->save();
         return back();
     }
 }
