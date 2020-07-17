@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\FaqAide;
+use App\EnquiryAide;
 
 
 class HomeController extends Controller
@@ -24,6 +25,15 @@ class HomeController extends Controller
         $faq->email = $request->email;
         $faq->message = $request->message;
         $faq->save();
+        return back();
+    }
+    public function storeEnquiry(Request $request){
+        $enquiry = new EnquiryAide;
+        $enquiry->name = $request->name;
+        $enquiry->email = $request->email;
+        $enquiry->message = $request->message;
+        $enquiry->number = $request->number;
+        $enquiry->save();
         return back();
     }
 }
