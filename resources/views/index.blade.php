@@ -52,7 +52,7 @@
 		  <!-- marquee for the explication -->
 		  <div class="black-box">
 			  <marquee direction="left" scrollamount="5" behavior="scroll">
-				@lang('**Due to the recent coronavirus pandemic,  we now offer ONLINE classes and students absolutely love it.        **2020 Results  **QE Boys topper 280/280 is our student.   **Students passed in Westminster, Eton and Tonbridge Boys.                    Congratulations to 5 students who passed 10 plus exam (CLSB, Whitgift, Trinity)             2019  EXAM RESULTS  - QE/WILSON/OLAVE - 45 SELECTIONS                   **  KENT (GL) - OVER 100 SELECTIONS         ** BEXLEY (CEM) - OVER 100 SELECTIONS       **NEWSTEAD - 51 SELECTIONS')
+				**@lang('With millions of people bein forced to stay home to help stop the spread of COVID-19 during recent months, MFL Galxy has found creative ways to continue online tuition through Zoom')...
 			  </marquee>
 		  </div>
 		  <!-- Page Content -->
@@ -185,7 +185,7 @@
 			  <a href="#"><img class="img-card" src="{{asset('images/tes.png')}}" alt="" /></a>
 			  <div class="card-body">
 				<h4 class="card-title">
-				  <a style="text-decoration:none;" href="{{ route('adult_classes') }}"> @lang('Mock / Revision Course / adult classes')</a>
+				  <a style="text-decoration:none;" href="{{ route('german') }}"> @lang('German classes')</a>
 				</h4>
 				<p class="card-text">@lang('Want to know more about extension classes')</p>
 			  </div>

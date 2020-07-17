@@ -14,7 +14,7 @@
     </ol>
 
      <!-- Image Header -->
-    <img class="img-fluid rounded mb-4" src="{{ asset('images/img/services.png') }}" alt="our services">
+    <img class="img-fluid rounded mb-4" src="{{ asset('images/image/service.jpg') }}" alt="our services">
 
     <!-- Marketing Icons Section -->
     <div class="row">

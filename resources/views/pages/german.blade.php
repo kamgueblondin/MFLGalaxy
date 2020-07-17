@@ -21,8 +21,12 @@
 
       <div class="col-md-6">
         <h3 class="my-3"></h3>
-        <p>@lang('First and foremost, learning French is the pleasure of learning a beautiful, rich, melodious language that is often called the language of love. French is also an analytical language that structures thought and develops critical thinking, which is a valuable skill for discussions and negociations').</p>
-		<p>@lang('French is, along with English, the only language spoken on all five continents. More than 220 million people speak French on all the five continents. French is a major language of international communication. It is the second most widely learned language after English and the sixth most widely spoken language in the world. French is also the second most widely taught language after English, and is taught on every continent. The OIF, an international organisation of French-speaking countries, is made up of 77 member States and governments. France also operates the biggest international network of cultural institutes, which run French-language course for close on a million learners').</p>
+        <p>@lang('German is the most widely spoken language in Europe.  More people speak German as their native language than any other language in Europe... While learning German can connect you to 120 million native speakers around the globe, remember that many people also learn German as a second language').</p>
+    <p>@lang('When you learn the German language, you get acquainted with the culture of the country it is spoken in, and you start loving it. Learning a new language will enable you to get in touch with its historical roots and enhance your personality and knowledge. German has the biggest number of resident speakers in the European Union; it is far more than English, French, or Spanish').</p>
+    <p>• @lang('The German language is amongst the ten most normally spoken languages across the globe').</p>
+    <p>• @lang('Germans are global leaders in Engineering').</p>
+    <p>• @lang('18% of the world\’s books are published in German, and few of these hardly appear in English translation').</p> 
+    <p>• @lang('German is the gateway to a higher education').</p>
 	  </div>
 
     </div>
@@ -58,8 +62,8 @@
           </div>
           <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="card-body">
-                <p class="card-text">@lang('An advantage for studying in France').</p>
-                <p>@lang('Speaking French opens up opportunities for higher education at some of France\'s best-known universities (the Sorbonne, Pierre Marie Curie University, etc.) or elites grandes écoles (HEC, Polytechnique, ESSEG), often on very favourable financial terms. Students with a good level of French may be eligible to apply for a French government grant to enrol on a postgraduate course of their choice in France, leading to an internationally recognised postgraduate degree').</p>          
+                <p class="card-text">@lang('An advantage for studying in Germany').</p>
+                <p>@lang('').</p>          
             </div>
           </div>
         </div>
@@ -71,9 +75,9 @@
           </div>
           <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="card-body">
-                <p class="card-text">@lang('Visiting Paris and the rest of France').</p>
-                <p>@lang('France is the workd\'s top tourist destination and attracts more than 79,5 million visitors a year. The ability to speak even a little French makes it so much more enjoyable to visit Paris and all the regions of France (from the mild climes of the Cote d\'Azur to the snow-capped peaks of the Alps via the rugged coastline of Brittany) and offers insights into French culture, mentality and way of life. French also comes in handy when travelling to Africa, Switzerland, Canada, Monaco, the Seychelles and other places').</p>          
-            </div>
+                <p class="card-text">@lang('Most of the people speak German as their national language other than any other language in Europe. It is an official tongue of Austria, Switzerland, and Luxembourg. The German language can connect you to more than 100 million native speakers around the world. It is the third most widely spoken language after English.').</p>
+                <p>@lang('When you know their native language, you gain more when you visit the country. You can well converse in their language and know and understand the people rather than just communicate in English with your tour guide. The Austrians, Germans, and Swiss are recognizable for their interest and love of foreign travel. It adds the opportunity for people who are in a job of a tourism industry').</p>
+              </div>
           </div>
         </div>
       </div>

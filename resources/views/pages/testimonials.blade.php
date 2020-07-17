@@ -12,57 +12,103 @@
       </li>
       <li class="breadcrumb-item active">@lang('Testimonials')</li>
     </ol>
-    <!-- Portfolio Item Row -->
-    <div class="row">
-
-      <div class="col-md-8">
-        <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+    <!-- Blog Post -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="#">
+              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Post Title</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+        </div>
       </div>
-
-      <div class="col-md-4">
-        <h3 class="my-3">Project Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-        <h3 class="my-3">Project Details</h3>
-        <ul>
-          <li>Lorem Ipsum</li>
-          <li>Dolor Sit Amet</li>
-          <li>Consectetur</li>
-          <li>Adipiscing Elit</li>
-        </ul>
+      <div class="card-footer text-muted">
+        Posted on January 1, 2017 by
+        <a href="#">Start Bootstrap</a>
       </div>
-
     </div>
-    <!-- /.row -->
 
-    <!-- Related Projects Row -->
-    <h3 class="my-4">Related Projects</h3>
-
-    <div class="row">
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </a>
+    <!-- Blog Post -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="#">
+              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Post Title</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+        </div>
       </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </a>
+      <div class="card-footer text-muted">
+        Posted on January 1, 2017 by
+        <a href="#">Start Bootstrap</a>
       </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </a>
-      </div>
-
     </div>
-    <!-- /.row -->
+
+    <!-- Blog Post -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="#">
+              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Post Title</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Posted on January 1, 2017 by
+        <a href="#">Start Bootstrap</a>
+      </div>
+    </div>
+
+    <!-- Blog Post -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="#">
+              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Post Title</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Posted on January 1, 2017 by
+        <a href="#">Start Bootstrap</a>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center mb-4">
+      <li class="page-item">
+        <a class="page-link" href="#">&larr; Older</a>
+      </li>
+      <li class="page-item disabled">
+        <a class="page-link" href="#">Newer &rarr;</a>
+      </li>
+    </ul>
+
+  </div>
 @endsection

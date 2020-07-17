@@ -32,7 +32,7 @@
         </p>
         <p>
           <abbr title="Email">Email</abbr>:
-          <a href="Mfl_galaxy2020@yahoo.com">Mfl_galaxy2020@yahoo.com</a>
+          <a href="mailto:Mfl_galaxy2020@yahoo.com">Mfl_galaxy2020@yahoo.com</a>
         </p>
         <p>
           <abbr title="Hours">Hours</abbr>: Monday - Friday: 8:00AM to 5:00PM
