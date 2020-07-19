@@ -47,5 +47,100 @@ Route::resource('information', 'informationcontroller');
 
 Route::prefix('admin')->namespace('Back')->group(function () {
     Route::name('admin')->get('/', 'AdminController@index');
-	
+    Route::name('information')->get('/information', 'AdminController@information');
+    Route::put('information/{id}', 'AdminController@updateInformation')->name('information.update');
+    Route::group([
+        'prefix' => 'faq_aides',
+    ], function () {
+        Route::get('/', 'FaqAidesController@index')
+             ->name('faq_aides.faq_aides.index');
+        Route::get('/create','FaqAidesController@create')
+             ->name('faq_aides.faq_aides.create');
+        Route::get('/show/{faqAides}','FaqAidesController@show')
+             ->name('faq_aides.faq_aides.show');
+        Route::get('/{faqAides}/edit','FaqAidesController@edit')
+             ->name('faq_aides.faq_aides.edit');
+        Route::post('/', 'FaqAidesController@store')
+             ->name('faq_aides.faq_aides.store');
+        Route::put('faq_aides/{faqAides}', 'FaqAidesController@update')
+             ->name('faq_aides.faq_aides.update');
+        Route::delete('/faq_aides/{faqAides}','FaqAidesController@destroy')
+             ->name('faq_aides.faq_aides.destroy');
+    });
+    Route::group([
+        'prefix' => 'enquiry_aides',
+    ], function () {
+        Route::get('/', 'EnquiryAidesController@index')
+             ->name('enquiry_aides.enquiry_aides.index');
+        Route::get('/create','EnquiryAidesController@create')
+             ->name('enquiry_aides.enquiry_aides.create');
+        Route::get('/show/{enquiryAides}','EnquiryAidesController@show')
+             ->name('enquiry_aides.enquiry_aides.show');
+        Route::get('/{enquiryAides}/edit','EnquiryAidesController@edit')
+             ->name('enquiry_aides.enquiry_aides.edit');
+        Route::post('/', 'EnquiryAidesController@store')
+             ->name('enquiry_aides.enquiry_aides.store');
+        Route::put('enquiry_aides/{enquiryAides}', 'EnquiryAidesController@update')
+             ->name('enquiry_aides.enquiry_aides.update');
+        Route::delete('/enquiry_aides/{enquiryAides}','EnquiryAidesController@destroy')
+             ->name('enquiry_aides.enquiry_aides.destroy');
+    });
+	Route::group([
+    'prefix' => 'blogs',
+	], function () {
+		Route::get('/', 'BlogsController@index')
+			 ->name('blogs.blogs.index');
+		Route::get('/create','BlogsController@create')
+			 ->name('blogs.blogs.create');
+		Route::get('/show/{blogs}','BlogsController@show')
+			 ->name('blogs.blogs.show');
+		Route::get('/{blogs}/edit','BlogsController@edit')
+			 ->name('blogs.blogs.edit');
+		Route::post('/', 'BlogsController@store')
+			 ->name('blogs.blogs.store');
+		Route::put('blogs/{blogs}', 'BlogsController@update')
+			 ->name('blogs.blogs.update');
+		Route::delete('/blogs/{blogs}','BlogsController@destroy')
+			 ->name('blogs.blogs.destroy');
+    });
+    
+    Route::group([
+        'prefix' => 'temoignages',
+    ], function () {
+        Route::get('/', 'TemoignagesController@index')
+             ->name('temoignages.temoignages.index');
+        Route::get('/create','TemoignagesController@create')
+             ->name('temoignages.temoignages.create');
+        Route::get('/show/{temoignages}','TemoignagesController@show')
+             ->name('temoignages.temoignages.show');
+        Route::get('/{temoignages}/edit','TemoignagesController@edit')
+             ->name('temoignages.temoignages.edit');
+        Route::post('/', 'TemoignagesController@store')
+             ->name('temoignages.temoignages.store');
+        Route::put('temoignages/{temoignages}', 'TemoignagesController@update')
+             ->name('temoignages.temoignages.update');
+        Route::delete('/temoignages/{temoignages}','TemoignagesController@destroy')
+             ->name('temoignages.temoignages.destroy');
+    });
+    
+    Route::group([
+        'prefix' => 'galeries',
+    ], function () {
+        Route::get('/', 'GaleriesController@index')
+             ->name('galeries.galeries.index');
+        Route::get('/create','GaleriesController@create')
+             ->name('galeries.galeries.create');
+        Route::get('/show/{galeries}','GaleriesController@show')
+             ->name('galeries.galeries.show');
+        Route::get('/{galeries}/edit','GaleriesController@edit')
+             ->name('galeries.galeries.edit');
+        Route::post('/', 'GaleriesController@store')
+             ->name('galeries.galeries.store');
+        Route::put('galeries/{galeries}', 'GaleriesController@update')
+             ->name('galeries.galeries.update');
+        Route::delete('/galeries/{galeries}','GaleriesController@destroy')
+             ->name('galeries.galeries.destroy');
+    });
+    
+
 });

@@ -12,103 +12,68 @@
       </li>
       <li class="breadcrumb-item active">@lang('Testimonials')</li>
     </ol>
-    <!-- Blog Post -->
-    <div class="card mb-4">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-lg-6">
-            <a href="#">
-              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+    <div class="row">
+
+        @if(config('app.locale') == 'fr')
+        @foreach ($temoignagesObjects as $temoignagesObject)
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="img-fluid rounded" src="{{ asset('/images/temoignage/'.$temoignagesObject->image) }}" alt="{{$temoignagesObject->title_frensh}}"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">{{$temoignagesObject->name}}</a>
+              </h4>
+              <p class="card-text">{{$temoignagesObject->content_frensh}}.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card-footer text-muted">
-        Posted on January 1, 2017 by
-        <a href="#">Start Bootstrap</a>
-      </div>
-    </div>
-
-    <!-- Blog Post -->
-    <div class="card mb-4">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-lg-6">
-            <a href="#">
-              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+        @endforeach
+        @elseif(config('app.locale') == 'en') 
+        @foreach ($temoignagesObjects as $temoignagesObject)
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="img-fluid rounded" src="{{ asset('/images/temoignage/'.$temoignagesObject->image) }}" alt="{{$temoignagesObject->content_deush}}"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">{{$temoignagesObject->name}}</a>
+              </h4>
+              <p class="card-text">{{$temoignagesObject->content_english}}.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card-footer text-muted">
-        Posted on January 1, 2017 by
-        <a href="#">Start Bootstrap</a>
-      </div>
-    </div>
-
-    <!-- Blog Post -->
-    <div class="card mb-4">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-lg-6">
-            <a href="#">
-              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+        @endforeach
+        @elseif(config('app.locale') == 'de')  
+        @foreach ($temoignagesObjects as $temoignagesObject)
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="img-fluid rounded" src="{{ asset('/images/temoignage/'.$temoignagesObject->image) }}" alt="{{$temoignagesObject->content_deush}}"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">{{$temoignagesObject->name}}</a>
+              </h4>
+              <p class="card-text">{{$temoignagesObject->content_deush}}.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card-footer text-muted">
-        Posted on January 1, 2017 by
-        <a href="#">Start Bootstrap</a>
-      </div>
-    </div>
-
-    <!-- Blog Post -->
-    <div class="card mb-4">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-lg-6">
-            <a href="#">
-              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+        @endforeach
+        @else 
+        @foreach ($temoignagesObjects as $temoignagesObject)
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="img-fluid rounded" src="{{ asset('/images/temoignage/'.$temoignagesObject->image) }}" alt="{{$temoignagesObject->content_spanish}}"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">{{$temoignagesObject->name}}</a>
+              </h4>
+              <p class="card-text">{{$temoignagesObject->content_spanish}}.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card-footer text-muted">
-        Posted on January 1, 2017 by
-        <a href="#">Start Bootstrap</a>
-      </div>
-    </div>
-
-    <!-- Pagination -->
-    <ul class="pagination justify-content-center mb-4">
-      <li class="page-item">
-        <a class="page-link" href="#">&larr; Older</a>
-      </li>
-      <li class="page-item disabled">
-        <a class="page-link" href="#">Newer &rarr;</a>
-      </li>
-    </ul>
-
-  </div>
+        @endforeach
+        @endif
+        <!-- Pagination -->
+        <!-- end operation -->
+        <div class="pagination justify-content-center mb-4">
+            {!! $temoignagesObjects->render() !!}
+        </div>
 @endsection

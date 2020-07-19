@@ -52,7 +52,7 @@
 		  <!-- marquee for the explication -->
 		  <div class="black-box">
 			  <marquee direction="left" scrollamount="5" behavior="scroll">
-				**@lang('With millions of people bein forced to stay home to help stop the spread of COVID-19 during recent months, MFL Galxy has found creative ways to continue online tuition through Zoom')...
+				**@if(config('app.locale') == 'fr') {{$informationsObject->fr}} @elseif(config('app.locale') == 'en') {{$informationsObject->en}} @elseif(config('app.locale') == 'de')  {{$informationsObject->de}} @else {{$informationsObject->es}} @endif...
 			  </marquee>
 		  </div>
 		  <!-- Page Content -->
@@ -78,18 +78,18 @@
 			  <h4 class="card-header bg-white">@lang('OUR TARGET SCHOOLS')</h4>
 			  <div class="card-body bg-white">
 				<p>@lang('We target the following schools for 11 Plus exams:')  </p>
-                      <ul>
-                       <li>St. Olave's, Orpington</li>
-                          <li>@lang('The Judd School'), Tonbridge</li>
-                          <li>@lang('Dartford Grammar'), Dartford</li>
-                          <li>@lang('Newstead Wood'), Orpington</li>
-                          <li>@lang('Tonbridge Grammar')</li>
-                          <li>Wilson's School, Wallington</li>
-                          <li>QE Boys; Henrietta Barnet</li>
-                          <li>@lang('Other Kent and Bexley schools')</li>
-                          <li>@lang('Private Schools (scholarships)')</li>
+					<ul>
+						<li>St. Olave's, Orpington</li>
+							<li>@lang('The Judd School'), Tonbridge</li>
+							<li>@lang('Dartford Grammar'), Dartford</li>
+							<li>@lang('Newstead Wood'), Orpington</li>
+							<li>@lang('Tonbridge Grammar')</li>
+							<li>Wilson's School, Wallington</li>
+							<li>QE Boys; Henrietta Barnet</li>
+							<li>@lang('Other Kent and Bexley schools')</li>
+							<li>@lang('Private Schools (scholarships)')</li>
 
-                      </ul>
+					</ul>
 				</div>
 			  <div class="card-footer bg-white">
 				@lang('Click') <a href="#" class="btn btn-primary">@lang('here')</a> @lang('to know more about us.')
@@ -102,20 +102,33 @@
 		<div class="clearfix"></div>
 		  <div class="col-md-12">
 		   <div class="news-section-ace-hm">
-			   <div class="block-hdnews" >
+			   <div class="block-hdnews">
 				  <div class="list-wrpaaer">
 					<ul class="list-aggregate" id="marquee-vertical" >
-						<li>
-							 @lang('To enquire, please complete the Additional Information Form (under Contact Us).  It is NOT the Contact Us form').
-
+						@if(isset($blogsObject))
+						<li class="h3">
+								@if(config('app.locale') == 'fr') 
+									{{$blogsObject->title_frensh}} 
+								@elseif(config('app.locale') == 'en') 
+									{{$blogsObject->title_english}} 
+								@elseif(config('app.locale') == 'de')  
+									{{$blogsObject->title_deush}} 
+								@else 
+									{{$blogsObject->title_spanish}}
+								@endif
 						</li>
 						<li>
-							 @lang('With millions of people bein forced to stay home to help stop the spread of COVID-19 during recent months, MFL Galxy has found creative ways to continue online tuition through Zoom').
+								@if(config('app.locale') == 'fr') 
+									{{$blogsObject->content_frensh}} 
+								@elseif(config('app.locale') == 'en') 
+									{{$blogsObject->content_english}} 
+								@elseif(config('app.locale') == 'de')  
+									{{$blogsObject->content_deush}} 
+								@else 
+									{{$blogsObject->content_spanish}}
+								@endif
 						</li>
-						<li>
-							 @lang('As from now on, all our classes and made using Zoom').
-
-						</li>
+						@endif
 					</ul>
 					<div class="clearfix"></div>
 			  </div>

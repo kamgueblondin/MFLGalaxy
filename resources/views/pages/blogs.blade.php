@@ -12,103 +12,109 @@
       </li>
       <li class="breadcrumb-item active">@lang('Blogs')</li>
     </ol>
+    @if(config('app.locale') == 'fr')
+    @foreach ($blogsObjects as $blogsObject)
     <!-- Blog Post -->
     <div class="card mb-4">
       <div class="card-body">
         <div class="row">
           <div class="col-lg-6">
             <a href="#">
-              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
+              <img class="img-fluid rounded" src="{{ asset('/images/blog/'.$blogsObject->image) }}" alt="{{$blogsObject->title_frensh}}">
             </a>
           </div>
           <div class="col-lg-6">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            <h2 class="card-title">{{$blogsObject->title_frensh}} </h2>
+            <p class="card-text">{{$blogsObject->content_frensh}} </p>
+            <a href="{{url('/')}}" class="btn btn-primary">@lang('home') &rarr;</a>
           </div>
         </div>
       </div>
       <div class="card-footer text-muted">
-        Posted on January 1, 2017 by
-        <a href="#">Start Bootstrap</a>
+        @lang('Posted on') {{ $blogsObject->created_at }} @lang('by')
+        <a href="#">{{ $blogsObject->user->name }}</a>
       </div>
     </div>
-
+    @endforeach
+    @elseif(config('app.locale') == 'en') 
+    @foreach ($blogsObjects as $blogsObject)
     <!-- Blog Post -->
     <div class="card mb-4">
       <div class="card-body">
         <div class="row">
           <div class="col-lg-6">
             <a href="#">
-              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
+              <img class="img-fluid rounded" src="{{ asset('/images/blog/'.$blogsObject->image) }}" alt="{{$blogsObject->title_frensh}}">
             </a>
           </div>
           <div class="col-lg-6">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            <h2 class="card-title">{{$blogsObject->title_english}} </h2>
+            <p class="card-text">{{$blogsObject->content_english}} </p>
+            <a href="{{url('/')}}" class="btn btn-primary">@lang('home') &rarr;</a>
           </div>
         </div>
       </div>
       <div class="card-footer text-muted">
-        Posted on January 1, 2017 by
-        <a href="#">Start Bootstrap</a>
+        @lang('Posted on') {{ $blogsObject->created_at }} @lang('by')
+        <a href="#">{{ $blogsObject->user->name }}</a>
       </div>
     </div>
-
+    @endforeach
+    @elseif(config('app.locale') == 'de')  
+    @foreach ($blogsObjects as $blogsObject)
     <!-- Blog Post -->
     <div class="card mb-4">
       <div class="card-body">
         <div class="row">
           <div class="col-lg-6">
             <a href="#">
-              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
+              <img class="img-fluid rounded" src="{{ asset('/images/blog/'.$blogsObject->image) }}" alt="{{$blogsObject->title_frensh}}">
             </a>
           </div>
           <div class="col-lg-6">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            <h2 class="card-title">{{$blogsObject->title_deush}} </h2>
+            <p class="card-text">{{$blogsObject->content_deush}} </p>
+            <a href="{{url('/')}}" class="btn btn-primary">@lang('home') &rarr;</a>
           </div>
         </div>
       </div>
       <div class="card-footer text-muted">
-        Posted on January 1, 2017 by
-        <a href="#">Start Bootstrap</a>
+        @lang('Posted on') {{ $blogsObject->created_at }} @lang('by')
+        <a href="#">{{ $blogsObject->user->name }}</a>
       </div>
     </div>
-
+    @endforeach 
+    @else 
+    @foreach ($blogsObjects as $blogsObject)
     <!-- Blog Post -->
     <div class="card mb-4">
       <div class="card-body">
         <div class="row">
           <div class="col-lg-6">
             <a href="#">
-              <img class="img-fluid rounded" src="http://placehold.it/750x300" alt="">
+              <img class="img-fluid rounded" src="{{ asset('/images/blog/'.$blogsObject->image) }}" alt="{{$blogsObject->title_frensh}}">
             </a>
           </div>
           <div class="col-lg-6">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            <h2 class="card-title">{{$blogsObject->title_spanish}} </h2>
+            <p class="card-text">{{$blogsObject->content_spanish}} </p>
+            <a href="{{url('/')}}" class="btn btn-primary">@lang('home') &rarr;</a>
           </div>
         </div>
       </div>
       <div class="card-footer text-muted">
-        Posted on January 1, 2017 by
-        <a href="#">Start Bootstrap</a>
+        @lang('Posted on') {{ $blogsObject->created_at }} @lang('by')
+        <a href="#">{{ $blogsObject->user->name }}</a>
       </div>
     </div>
+    @endforeach
+    @endif
 
     <!-- Pagination -->
-    <ul class="pagination justify-content-center mb-4">
-      <li class="page-item">
-        <a class="page-link" href="#">&larr; Older</a>
-      </li>
-      <li class="page-item disabled">
-        <a class="page-link" href="#">Newer &rarr;</a>
-      </li>
-    </ul>
+    <!-- end operation -->
+    <div class="pagination justify-content-center mb-4">
+        {!! $blogsObjects->render() !!}
+    </div>
 
   </div>
 @endsection

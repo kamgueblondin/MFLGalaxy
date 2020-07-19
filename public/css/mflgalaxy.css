@@ -33,7 +33,7 @@ ul.navbar-nav.for-social-width .btn {  width: 40px;}
 	border-radius: 0px;
 	color: white;
 }
-.heading-mrg{margin:20px 0; display: block;}
+.heading-mrg{margin:8px 0; display: block;}
 .btn-facebook{color:#fff!important;background-color:#3b5998;border-radius:0}
 .btn-facebook:hover{color:#fff!important;background-color:#29406F!important}
 .btn-facebook:focus,.btn-facebook.focus{color:#fff!important;background-color:#3b5998}
@@ -70,6 +70,8 @@ ul.navbar-nav.for-social-width .btn {  width: 40px;}
 	padding: 5px 15px;
 	width: 50%;
 	margin-left: 50%;
+	display: flex;
+
 	/* border:solid blue 2px; */
 	border:none;
 }
@@ -115,7 +117,7 @@ ul{list-style:none;padding-left:0}
 /*Top Menu css start here*/
 .logo{max-width: 150px;} 
 .banner-img-block {display: block;}
-.heading-mrg{margin: 10px 0;}
+.heading-mrg{margin: 0px 0px;}
 .sidenav ul.min-menu{display: block;}
 .sidenav {height: 100%; width: 0; position: fixed; top: 0; left: 0; background-color: #fff; overflow-x: hidden; transition: 0.5s; padding-top:0px;min-width: auto; box-shadow: -5px -2px 5px -3px #dcdcdc inset;}
 .sidenav ul.min-menu li.btn-become a{ border: 0px solid #fff;color: #cfcfcf;padding: 14px 10px 10px; font-size: 18px; text-transform: none;}
@@ -145,7 +147,7 @@ ul{list-style:none;padding-left:0}
 .list-wrpaaer{ height: 100%;}
 .list-aggregate li{  border-radius: 5px; margin-bottom: 0px; vertical-align: top; padding: 15px; color: #d80000;font-size: 14px;font-family: "open sans semibold"; letter-spacing: 0.3px;}
 .list-aggregate li a{color: #00719b; font-size: 18px; display: block; font-weight: 600; letter-spacing: 1px;}
-.header-text{display:block;margin-top:14px;}
+.header-text{display:block;margin-top:0px;}
 .header-text h3{font-size:30px;font-weight:700;color:#002493;margin-top:0;}
 .header-text span{display:block;font-size:14px;color:#5e5e5e;line-height:1;}
 .img-card{width:50px;height:50px;vertical-align:center;justify-content:center;margin-left:40%;margin-top:15px;}

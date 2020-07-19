@@ -46,7 +46,7 @@ return [
     */
 
     'logo' => '<b>MFLG</b>alaxy',
-    'logo_img' => 'images/icon.png',
+    'logo_img' => 'images/logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -213,79 +213,37 @@ return [
             'search' => true,
             'topnav' => true,
         ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+        ['header' => 'Application settings'],
+		[
+            'text'        => 'Information',
+            'url'         => 'admin/information',
+            'icon_color' => 'cyan',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
+            'text'        => 'Fac aide',
+            'url'         => 'admin/faq_aides',
             'icon_color' => 'red',
         ],
         [
-            'text'       => 'warning',
+            'text'        => 'Contact form',
+            'url'         => 'admin/enquiry_aides',
+            'icon_color' => 'blue',
+        ],
+        ['header' => 'account_settings'],
+        [
+            'text'        => 'Blog',
+            'url'         => 'admin/blogs',
+            'icon_color' => 'purple',
+        ],
+        [
+            'text'        => 'Témoignage',
+            'url'         => 'admin/temoignages',
             'icon_color' => 'yellow',
         ],
         [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
+            'text'        => 'Galerie',
+            'url'         => 'admin/galeries',
+            'icon_color' => 'gray',
         ],
     ],
 

@@ -17,7 +17,10 @@ class CreateFaqAidesTable extends Migration
             $table->id();
             $table->string("name")->nullable();
             $table->string("email")->nullable();
-            $table->text("message")->nullable();
+            $table->text("message_en");
+            $table->text("message_fr");
+            $table->text("message_es");
+            $table->text("message_de");
             $table->timestamps();
         });
     }

@@ -27,10 +27,10 @@
 
 <body>
   <!-- Header Start Here -->
-  <div class="heading-mrg mb-1">
+  <div class="heading-mrg">
 	 <div class="container">
 		<div class="row">
-			  <div class="col-12 col-sm-4 col-md-5 col-lg-4 d-flex justify-content-center justify-content-md-start"><a href="{{ url('/') }}"> <img class="logo" src="{{asset('images/logo.png') }}" class="class-ace-logo" alt="ACE 11+ Tuition" /></a>
+			  <div class="col-12 col-sm-4 col-md-5 col-lg-4 d-flex justify-content-center justify-content-md-start"><a href="{{ url('/') }}"> <img class="logo" src="{{asset('images/logo.png') }}" class="class-ace-logo" width="90" alt="MFLGaxaly Tuition" /></a>
 			  </div>
 			  <div class="col-12 col-sm-7 col-md-4 col-lg-4 d-flex justify-content-center justify-content-md-end">
 				 <div class="header-text">
@@ -39,24 +39,34 @@
 				 </div>
 			  </div>
 			  
-			  <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-4 text-right">
-				  
-					<div class="list-group">
-						@foreach(config('app.locales') as $locale)
-						<a href="{{ route('language', $locale) }}" style="text-decoration:none;" class="list-group-item nav-lang-size">
-							@if($locale == 'fr')
-								Français
-							@elseif($locale == 'es')
-								Español
-							@elseif($locale == 'de')
-								Deutsch
-							@else
-								English &nbsp
-							@endif
-						</a>
-						@endforeach
+			  <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-4">
+				<div class="row">
+					<div class="col">
+					</div>
+					<div class="col">
+					    <table align="right">
+							<tr>
+							@foreach(config('app.locales') as $locale)
+								@if($locale == 'de')
+								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none;">Deutsch</a></td>
+								@elseif($locale == 'en')
+								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none;">English</a></td>
+								@endif
+							@endforeach
+							</tr>
+							<tr>
+							@foreach(config('app.locales') as $locale)
+								@if($locale == 'fr')
+								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none;">Français</a></td>
+								@elseif($locale == 'es')
+								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none;">Español</a></td>
+								@endif
+							@endforeach
+							</tr>
+						</table>
 					</div>
 				</div>
+			</div>
 		</div>
 	 </div>
   </div>
@@ -83,7 +93,7 @@
   <div class="container-fluid">
 
     <!-- Content Row -->
-    <div class="row mt-4">
+    <div class="row mt-0">
       <!-- Sidebar Column -->
       <div class="col-lg-3 mb-4">
 	  <div class="container  navbar-collapse collapse d-lg-block d-xl-block" id="mySidenav">

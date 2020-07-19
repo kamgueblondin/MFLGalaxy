@@ -5,13 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\FaqAide;
 use App\EnquiryAide;
+use App\Blog;
+use App\Information;
 
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $blogsObject = Blog::all()->last();
+        $informationsObject = Information::findOrFail(1);
+        return view('index', compact('blogsObject','informationsObject'));
     }
 	public function language(String $locale)
     {
