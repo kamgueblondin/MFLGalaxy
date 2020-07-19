@@ -229,7 +229,7 @@ return [
             'url'         => 'admin/enquiry_aides',
             'icon_color' => 'blue',
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'Application settings'],
         [
             'text'        => 'Blog',
             'url'         => 'admin/blogs',
