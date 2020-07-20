@@ -220,12 +220,12 @@ return [
             'icon_color' => 'cyan',
         ],
         [
-            'text'        => 'Fac aide',
+            'text'        => 'Faq',
             'url'         => 'admin/faq_aides',
             'icon_color' => 'red',
         ],
         [
-            'text'        => 'Contact form',
+            'text'        => 'Contact',
             'url'         => 'admin/enquiry_aides',
             'icon_color' => 'blue',
         ],
@@ -236,12 +236,12 @@ return [
             'icon_color' => 'purple',
         ],
         [
-            'text'        => 'Témoignage',
+            'text'        => 'Testimony',
             'url'         => 'admin/temoignages',
             'icon_color' => 'yellow',
         ],
         [
-            'text'        => 'Galerie',
+            'text'        => 'Gallery',
             'url'         => 'admin/galeries',
             'icon_color' => 'gray',
         ],
