@@ -16,45 +16,45 @@
     <div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
-          <h3 class="card-header bg-primary text-white">Basic</h3>
+          <h3 class="card-header bg-primary text-white">@lang('Basic')</h3>
           <div class="card-body">
-            <div class="display-4">£10.00</div>
-            <div class="font-italic">per Session Weekday or Weekend Classes</div>
+            <div class="display-4" style="font-size:30px;">@lang('£10.00')</div>
+            <div class="font-italic">@lang('per Session Weekday or Weekend Classes')</div>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">KS1 and KS2</li>
+            <li class="list-group-item">@lang('KS1 and KS2')</li>
             <li class="list-group-item">
-              <a href="#" class="btn btn-primary">Sign Up!</a>
+              <a target="blank"  href="https://www.paypal.com/" class="btn btn-primary">@lang('Sign Up')!</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="col-lg-4 mb-4">
         <div class="card card-outline-primary h-100">
-          <h3 class="card-header bg-primary text-white">Advanced</h3>
+          <h3 class="card-header bg-primary text-white">@lang('Advanced')</h3>
           <div class="card-body">
-			<div class="display-4">£20.00 to £30.00</div>
-			<div class="font-italic">per Session Weekend classes</div>			
+			<div class="display-4" style="font-size:30px;">@lang('£20.00 to £30.00')</div>
+			<div class="font-italic">@lang('per Session Weekend classes')</div>			
           </div>
           <ul class="list-group list-group-flush">
-			<li class="list-group-item">JS3, KS4 and KS5</li>
+			<li class="list-group-item">@lang('JS3, KS4 and KS5')</li>
             <li class="list-group-item">
-              <a href="#" class="btn btn-primary">Sign Up!</a>
+              <a target="blank"  href="https://www.paypal.com/" class="btn btn-primary">@lang('Sign Up')!</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
-          <h3 class="card-header bg-primary text-white">Adult/Leisure</h3>
+          <h3 class="card-header bg-primary text-white">@lang('Adult/Leisure')</h3>
           <div class="card-body">
-            <div class="display-4">£30.00</div>
-            <div class="font-italic">per Session Weekdays and Weekend Classes</div>
+            <div class="display-4" style="font-size:30px;">@lang('£30.00')</div>
+            <div class="font-italic">@lang('per Session Weekdays and Weekend Classes')</div>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"></li>
             <li class="list-group-item">
-              <a href="#" class="btn btn-primary">Sign Up!</a>
+              <a target="blank"  href="https://www.paypal.com/" class="btn btn-primary">@lang('Sign Up')!</a>
             </li>
           </ul>
         </div>

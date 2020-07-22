@@ -140,7 +140,7 @@
 		<div class="row">
 		  <div class="col-lg-4 portfolio-item">
 			<div class="card h-100 box-3">
-			  <a href="#"><img class="img-card" src="{{asset('images/img-box.png')}}" alt=""></a>
+			  <a href="{{ route('about_us') }}"><img class="img-card" src="{{asset('images/img-box.png')}}" alt=""></a>
 			  <div class="card-body">
 				<h4 class="card-title">
 				  <a  style="text-decoration:none;" href="{{ route('about_us') }}">@lang('Why') MFLGalaxy?</a>
@@ -204,39 +204,7 @@
 			  </div>
 			</div>
 		  </div>
-		  <div class="col-lg-4 col-sm-6 portfolio-item">
-			<div class="card h-100 box-3">
-			  <a href="#"><img class="img-card" src="{{asset('images/serv.png')}}" alt=""></a>
-			  <div class="card-body">
-				<h4 class="card-title">
-				  <a style="text-decoration:none;" href="{{ route('our_services') }}"> @lang('Services')</a>
-				</h4>
-				<p class="card-text">@lang('Our range of advisory services to build strategy for your success').</p>
-			  </div>
-			</div>
-		  </div>
-		  <div class="col-lg-4 col-sm-6 portfolio-item">
-			<div class="card h-100 box-3">
-			  <a href="#"><img class="img-card" src="{{asset('images/blog.png')}}" alt=""></a>
-			  <div class="card-body">
-				<h4 class="card-title">
-				  <a style="text-decoration:none;" href="{{ route('blogs') }}">Blogs &amp; @lang('News')</a>
-				</h4>
-				<p class="card-text">@lang('Watch out for news, blogs &amp; updates').</p>
-			  </div>
-			</div>
-		  </div>
-		  <div class="col-lg-4 col-sm-6 portfolio-item">
-			<div class="card h-100 box-3">
-			  <a href="#"><img class="img-card" src="{{asset('images/conta.png')}}" alt="" /></a>
-			  <div class="card-body">
-				<h4 class="card-title">
-				  <a style="text-decoration:none;" href="{{ route('enquiry_form') }}">@lang('Contact Us')</a>
-				</h4>
-				<p class="card-text">@lang('We are generally over-subscribed. Contact us now').</p>
-			  </div>
-			</div>
-		  </div>
+
 		</div>
 		<!-- /.row -->
 		

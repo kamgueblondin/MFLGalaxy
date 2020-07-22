@@ -35,7 +35,7 @@
 			  <div class="col-12 col-sm-7 col-md-4 col-lg-4 d-flex justify-content-center justify-content-md-end">
 				 <div class="header-text">
 					<h3>@lang('Language Tuition')</h3>
-					<span>@lang('Learn naturally, Speak naturally')</span>
+					<span>@lang('Think naturally, Learn naturally, Speak naturally')</span>
 				 </div>
 			  </div>
 			  
@@ -108,14 +108,14 @@
 				   
 				</ul>
 				 </li>
-				 <li class="sub-menu" style="color:#002493;"><a href="#" style="color:#002493;"> @lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				 <li class="sub-menu" style="color:#002493;"><a href="javascript:void(0);" style="color:#002493;"> @lang('My choice')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
 					<li><a href="{{ route('french') }}">@lang('French')</a></li>
 					<li><a href="{{ route('spanish') }}">@lang('Spanish')</a></li>
 					<li><a href="{{ route('german') }}">@lang('German')</a></li>
 				  </ul>
 				 </li>
-				<li class="sub-menu" style="color:#002493;"><a href="#" style="color:#002493;"> @lang('Classes')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
+				<li class="sub-menu" style="color:#002493;"><a href="{{ route('class_structure') }}" style="color:#002493;"> @lang('Classes')</a> <span class="arrow-i-fa"><i class="fa fa-angle-down"></i></span>
 				  <ul class="su-menu">
 						<li><a href="{{ route('gallery') }}">@lang('Photo Gallery')</a></li>
 						<li><a href="{{ route('class_structure') }}">@lang('Class Structure')</a></li>

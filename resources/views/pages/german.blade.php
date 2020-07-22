@@ -25,7 +25,7 @@
     <p>@lang('When you learn the German language, you get acquainted with the culture of the country it is spoken in, and you start loving it. Learning a new language will enable you to get in touch with its historical roots and enhance your personality and knowledge. German has the biggest number of resident speakers in the European Union; it is far more than English, French, or Spanish').</p>
     <p>• @lang('The German language is amongst the ten most normally spoken languages across the globe').</p>
     <p>• @lang('Germans are global leaders in Engineering').</p>
-    <p>• @lang('18% of the world\’s books are published in German, and few of these hardly appear in English translation').</p> 
+    <p>• @lang('18% of the world’s books are published in German, and few of these hardly appear in English translation').</p> 
     <p>• @lang('German is the gateway to a higher education').</p>
 	  </div>
 
@@ -75,7 +75,7 @@
           </div>
           <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="card-body">
-                <p class="card-text">@lang('Most of the people speak German as their national language other than any other language in Europe. It is an official tongue of Austria, Switzerland, and Luxembourg. The German language can connect you to more than 100 million native speakers around the world. It is the third most widely spoken language after English.').</p>
+                <p class="card-text">@lang('Most of the people speak German as their national language other than any other language in Europe. It is an official tongue of Austria, Switzerland, and Luxembourg. The German language can connect you to more than 100 million native speakers around the world. It is the third most widely spoken language after English').</p>
                 <p>@lang('When you know their native language, you gain more when you visit the country. You can well converse in their language and know and understand the people rather than just communicate in English with your tour guide. The Austrians, Germans, and Swiss are recognizable for their interest and love of foreign travel. It adds the opportunity for people who are in a job of a tourism industry').</p>
               </div>
           </div>

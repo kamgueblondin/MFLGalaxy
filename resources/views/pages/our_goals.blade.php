@@ -29,7 +29,7 @@
 	<hr>
     <p>@lang('MFL Galaxy  can offer tuition via Skype or ZOOM  in French, German, or Spanish,.  All carried out by an experienced and fully qualified teacher.  The beauty of this is that we can still be of service to you regardless of whether you live in the UK or abroad.') </p>
 
-    <p>@lang('Payment for online tuition can be made via the PayPal or via bank transfer.') </p>
+    <p>@lang('Payment for online tuition can be made via')<a target="blank"  href="https://www.paypal.com/"> PayPal </a>@lang('or via') <a target="blank"  href="https://www.paypal.com/">@lang('bank transfer')</a>.</p>
 
     <div class="row">
 

@@ -47,14 +47,10 @@
             </h5>
           </div>
           <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-              <div class="card-body">           
-              <p class="card-text">@lang('Are you career-oriented? Would you like to get a better job or have several employers throw offers and counteroffers in a scramble to hire you? Then start learning Spanish now!')</p>
-              <p>@lang('It does not matter if you want to stay in America or you plan on finding a job abroad—the fact remains that with the number of Spanish speakers growing, sooner or later you will have to attend to a patient who only speaks Spanish or help a South American client get their taxes sorted').</p>
-              <p>@lang('If you are a translator or an interpreter, mastering Spanish can open a whole new world of documents that need to be translated and people who will hire you to interpret for them while at a meeting or an interview').</p>
-              <p>@lang('Learning Spanish will add that final touch to your resume that will make you stand out among the rest of candidates who are applying for that job you so want to get').</p>
-              <p>@lang('However, if you do not want to change your career or leave your job, Spanish is also a great asset that can help you get promoted at your current place of employment!')</p>
-              <p>@lang('Maybe your bosses want their managers to speak three languages fluently. Maybe the company is opening a new branch office in Venezuela and they are looking for an American with fluent Spanish to be their international director. Or maybe your employers are like many others who value foreign language skills in their employees').</p>
-              </div>
+            <div class="card-body">
+                <p class="card-text">@lang('Learning one language is not enough').</p>
+                <p>@lang('In today\'s world, speaking one foreign language is not enough. Students who speak several languages will increase their chances of finding a job, whether at home or abroad. Learning another language enriches the mind and opens up new horizons, both personal and professional').</p>          
+            </div>
           </div>
         </div>
         <div class="card">

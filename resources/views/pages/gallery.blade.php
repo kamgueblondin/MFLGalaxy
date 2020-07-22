@@ -16,18 +16,12 @@
     @foreach ($galeriesObjects as $galeriesObject)
     <!-- Project One -->
     <div class="row">
-      <div class="col-md-7">
-        <a href="#">
-            <img class="img-fluid rounded" src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
+      <div class="col-md-none">
+        <a href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">
+          <img class="img-fluid rounded" src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
         </a>
       </div>
-      <div class="col-md-5">
-        <h3>{{$galeriesObject->title_frensh}}</h3>
-        <p>{{$galeriesObject->content_frensh}}</p>
-        <a class="btn btn-primary" href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">View Project
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+
     </div>
     <!-- /.row -->
 
@@ -37,18 +31,12 @@
     @foreach ($galeriesObjects as $galeriesObject)
     <!-- Project One -->
     <div class="row">
-      <div class="col-md-7">
-        <a href="#">
+      <div class="col-md-none">
+        <a href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">
             <img class="img-fluid rounded" src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
         </a>
       </div>
-      <div class="col-md-5">
-        <h3>{{$galeriesObject->title_english}}</h3>
-        <p>{{$galeriesObject->content_english}}</p>
-        <a class="btn btn-primary" href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">View Project
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+
     </div>
     <!-- /.row -->
 
@@ -58,18 +46,12 @@
     @foreach ($galeriesObjects as $galeriesObject)
     <!-- Project One -->
     <div class="row">
-      <div class="col-md-7">
-        <a href="#">
+      <div class="col-md-none">
+        <a href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">
             <img class="img-fluid rounded" src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
         </a>
       </div>
-      <div class="col-md-5">
-        <h3>{{$galeriesObject->title_deush}}</h3>
-        <p>{{$galeriesObject->content_deush}}</p>
-        <a class="btn btn-primary" href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">View Project
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+
     </div>
     <!-- /.row -->
     @endforeach 
@@ -77,18 +59,12 @@
     @foreach ($galeriesObjects as $blogsObject)
     <!-- Project One -->
     <div class="row">
-      <div class="col-md-7">
-        <a href="#">
+      <div class="col-md-none">
+        <a href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">
             <img class="img-fluid rounded" src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
         </a>
       </div>
-      <div class="col-md-5">
-        <h3>{{$galeriesObject->title_spanish}}</h3>
-        <p>{{$galeriesObject->content_spanish}}</p>
-        <a class="btn btn-primary" href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">View Project
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+
     </div>
     <!-- /.row -->
     @endforeach
