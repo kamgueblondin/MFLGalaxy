@@ -48,7 +48,7 @@
 							<tr>
 							@foreach(config('app.locales') as $locale)
 								@if($locale == 'de')
-								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none;">Deutsch</a></td>
+								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none; margin-left:10px;">Deutsch</a></td>
 								@elseif($locale == 'en')
 								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none;">English</a></td>
 								@endif
@@ -59,7 +59,7 @@
 								@if($locale == 'fr')
 								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none;">Français</a></td>
 								@elseif($locale == 'es')
-								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none;">Español</a></td>
+								<td><a href="{{ route('language', $locale) }}" style="text-decoration:none; margin-left:10px;">Español</a></td>
 								@endif
 							@endforeach
 							</tr>

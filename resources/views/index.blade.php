@@ -7,6 +7,7 @@
 				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 			  </ol>
 			  <div class="carousel-inner" role="listbox">
 				<!-- Slide One - Set the background image for this slide in the line below -->
@@ -31,6 +32,13 @@
 				  </div>-->
 				</div>
 				<!-- Slide Three - Set the background image for this slide in the line below -->
+				<div class="carousel-item" style="background-image: url('{{asset('images/banners/2284.jpg') }}')">
+				  <!--<div class="carousel-caption d-none d-md-block">
+					<h3>@lang('Online courses Experts')</h3>
+					<p>@lang('As our classes are now conducted ONLINE, we can accommodate more students. Please drop an enquiry and we will contact you shortly. Our Year 5 classes are customized for specific grammar and private schools. Most of our students are toppers from various state and private schools. We train them with the best strategy and material which is evident in our fabulous results.')</p>
+				  </div>-->
+				</div>
+				<!-- Slide Fort - Set the background image for this slide in the line below -->
 				<div class="carousel-item" style="background-image: url('{{asset('images/banners/2284.jpg') }}')">
 				  <!--<div class="carousel-caption d-none d-md-block">
 					<h3>@lang('Online courses Experts')</h3>
