@@ -16,9 +16,16 @@ class CreateEnquiryAidesTable extends Migration
         Schema::create("enquiry_aides", function (Blueprint $table) {
             $table->id();
             $table->string("name");
+            $table->string("parent");
             $table->string("email");
             $table->string("number");
             $table->text("message");
+            $table->string("age");
+            $table->string("grade");
+            $table->string("gender");
+            $table->string("choice");
+            $table->string("primary_course");
+            $table->string("additional_course");
             $table->timestamps();
         });
     }

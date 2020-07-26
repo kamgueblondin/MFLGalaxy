@@ -32,7 +32,9 @@
       </div>
       <div class="card-footer text-muted">
         @lang('Posted on') {{ $blogsObject->created_at }} @lang('by')
+        @if(@isset( $blogsObject->user->name))
         <a href="#">{{ $blogsObject->user->name }}</a>
+        @endisset
       </div>
     </div>
     @endforeach
@@ -56,7 +58,9 @@
       </div>
       <div class="card-footer text-muted">
         @lang('Posted on') {{ $blogsObject->created_at }} @lang('by')
+        @if(@isset( $blogsObject->user->name))
         <a href="#">{{ $blogsObject->user->name }}</a>
+        @endisset
       </div>
     </div>
     @endforeach

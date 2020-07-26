@@ -14,7 +14,7 @@
     </ol>
 
     <br>
-    <h1 style="font-size:18px;">@lang('Questions fréquemment posées : ')</h1>
+    <h1 style="font-size:18px;">@lang('frequently asked questions') :</h1>
     <br>
     <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
         @if(config('app.locale') == 'fr')
