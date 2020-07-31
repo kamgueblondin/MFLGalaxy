@@ -48,11 +48,13 @@ class HomeController extends Controller
         $enquiry->gender = $request->gender;
         
         $enquiry->save();
+        Mail::to('landrynjikam79@gmail.com')
+            ->send(new Contact($request->except('_token')));
         return back()->with('success_message', 'Your message has been sent successfully. We will contact you!.');
     }
     public function storeMail(Request $request)
     {
-        Mail::to('fomacorp000@gmail.com')
+        Mail::to('landrynjikam79@gmail.com')
             ->send(new Contact($request->except('_token')));
  
         return redirect()->to('/');
