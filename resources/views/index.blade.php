@@ -83,7 +83,7 @@
 		  </div>
 		  <div class="col-lg-6 mb-4">
 			<div class="card h-100 box-3">
-			  <h4 class="card-header bg-white">@lang('OUR TARGET')</h4>
+			  <h4 class="card-header bg-white">@lang('OUR TARGETS')</h4>
 			  <div class="card-body bg-white">
 				<p>@lang('')  </p>
 					<ul>

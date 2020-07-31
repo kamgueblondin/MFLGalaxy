@@ -184,11 +184,11 @@
               <label>@lang('Please choice of level'):</label>
             </div>
             <div class="col">
-             KS2 <input type="radio" name="choice">
-             KS3 <input type="radio" name="choice">
-             KS4 <input type="radio" name="choice">
-             KS5 <input type="radio" name="choice">
-             ADULTS <input type="radio" name="choice">
+             KS2 <input type="radio" name="choice" value="KS2">
+             KS3 <input type="radio" name="choice" value="KS3">
+             KS4 <input type="radio" name="choice" value="KS4">
+             KS5 <input type="radio" name="choice" value="KS5">
+             ADULTS <input type="radio" name="choice" value="ADULTS">
             </div>
           </div> 
               <p class="help-block"></p>
