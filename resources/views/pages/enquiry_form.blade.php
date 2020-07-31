@@ -104,7 +104,7 @@
                     </div>
                   <div class="col">
 
-                  <input type="email" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}" autofocus>
+                  <input type="email" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}">
                   @if ($errors->has('email'))
                       <div class="invalid-feedback">
                           {{ $errors->first('email') }}
