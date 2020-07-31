@@ -3,17 +3,6 @@
 @section('content')
     <!-- Page Heading/Breadcrumbs -->  
     <h1 class="mt-2 mb-2">@lang('Enquiry Form')
-      @if(Session::has('success_message'))
-      <div class="alert alert-success">
-        <span class="glyphicon glyphicon-ok"></span>
-        {!! session('success_message') !!}
-
-        <button type="button" class="close" data-dismiss="alert" aria-label="close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-
-      </div>
-    @endif
     </h1>
 
     <ol class="breadcrumb">
@@ -32,6 +21,17 @@
       <!-- Contact Details Column -->
       <div class="col-lg-4 mb-4">
         <h3>Contact Details</h3>
+        @if(Session::has('success_message'))
+          <div class="alert alert-success">
+            <span class="glyphicon glyphicon-ok"></span>
+            {!! session('success_message') !!}
+
+            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+        @endif
         <p>
            
           <br>
