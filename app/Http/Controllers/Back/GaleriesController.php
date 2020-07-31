@@ -121,22 +121,22 @@ class GaleriesController extends Controller
             $path = 'galerie';
             if(!empty($request->image)){
                 $logoName = $this->uploadImage($request->image, $path);
-                $galerie->image=$logoName;
+                $galeries->image=$logoName;
             }
-            $galerie->title_english=$request->title_english;
-            $galerie->title_frensh=$request->title_frensh;
-            $galerie->title_spanish=$request->title_spanish;
-            $galerie->title_deush=$request->title_deush;
-            $galerie->content_english=$request->content_english;
-            $galerie->content_frensh=$request->content_frensh;
-            $galerie->content_spanish=$request->content_spanish;
-            $galerie->content_deush=$request->content_deush;
-            $galerie->save();
+            $galeries->title_english=$request->title_english;
+            $galeries->title_frensh=$request->title_frensh;
+            $galeries->title_spanish=$request->title_spanish;
+            $galeries->title_deush=$request->title_deush;
+            $galeries->content_english=$request->content_english;
+            $galeries->content_frensh=$request->content_frensh;
+            $galeries->content_spanish=$request->content_spanish;
+            $galeries->content_deush=$request->content_deush;
+            $galeries->save();
 
             return redirect()->route('galeries.galeries.index')
                 ->with('success_message', 'Galeries was successfully updated.');
         } catch (Exception $exception) {
-
+            dd($exception);
             return back()->withInput()
                 ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request.']);
         }        

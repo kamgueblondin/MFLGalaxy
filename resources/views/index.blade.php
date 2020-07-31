@@ -11,14 +11,14 @@
 			  </ol>
 			  <div class="carousel-inner" role="listbox">
 				<!-- Slide One - Set the background image for this slide in the line below -->
-				<div class="carousel-item active" style="background-image: url('{{asset('images/banners/580.jpg') }}')">
+				<div class="carousel-item active" style="background-image: url('{{asset('images/banners/1441.jpg') }}')">
 				  <!--<div class="carousel-caption d-none d-md-block">
 					<h3>@lang('Online Course')</h3>
 					<p>@lang('Good news !!! We provide customized tuition via online sessions. It doesn\'t matter where you live as long as you have a laptop/ipad, broadband connection and a headphone. We teach using the proven framework & methodologies that has enabled our large number of students to get selected into the top grammar schools(QE Boys, Wilson, Olave\'s, Tiffin etc.) and independent schools(Eton, Westminster, City of London Boys, Sevenoaks, King\'s College). We specialise in both GL and CEM format.')</p>
 				  </div>-->
 				</div>
 				<!-- Slide Two - Set the background image for this slide in the line below 1900x1080 -->
-				<div class="carousel-item" style="background-image: url('{{asset('images/banners/1441.jpg') }}')">
+				<div class="carousel-item" style="background-image: url('{{asset('images/banners/580.jpg') }}')">
 				  <!--<div class="carousel-caption d-none d-md-block">
 					<h3>@lang('RESULTS')</h3>
 					<p>@lang('We have achieved wonderful success in 2019 exams.') <br>
@@ -39,7 +39,7 @@
 				  </div>-->
 				</div>
 				<!-- Slide Fort - Set the background image for this slide in the line below -->
-				<div class="carousel-item" style="background-image: url('{{asset('images/banners/2284.jpg') }}')">
+				<div class="carousel-item" style="background-image: url('{{asset('images/banners/1442.jpg') }}')">
 				  <!--<div class="carousel-caption d-none d-md-block">
 					<h3>@lang('Online courses Experts')</h3>
 					<p>@lang('As our classes are now conducted ONLINE, we can accommodate more students. Please drop an enquiry and we will contact you shortly. Our Year 5 classes are customized for specific grammar and private schools. Most of our students are toppers from various state and private schools. We train them with the best strategy and material which is evident in our fabulous results.')</p>

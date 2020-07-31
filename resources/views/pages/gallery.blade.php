@@ -12,64 +12,21 @@
       </li>
       <li class="breadcrumb-item active">@lang('Gallery')</li>
     </ol>
-    @if(config('app.locale') == 'fr')
-    @foreach ($galeriesObjects as $galeriesObject)
     <!-- Project One -->
-    <div class="row">
-      <div class="col-md-none">
-        <a href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">
-          <img class="img-fluid rounded" src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
-        </a>
-      </div>
-
+    <div class="row">  
+      @foreach ($galeriesObjects as $galeriesObject)
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a {{ asset('/images/galerie/'.$galeriesObject->image) }}>
+              <img class="card-img-top"src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" height="500px" alt="{{$galeriesObject->title_frensh}}">
+            </a>
+          </div>
+        </div>
+      <!-- /.row -->
+      @endforeach 
     </div>
-    <!-- /.row -->
-
-    <hr>
-    @endforeach
-    @elseif(config('app.locale') == 'en') 
-    @foreach ($galeriesObjects as $galeriesObject)
-    <!-- Project One -->
-    <div class="row">
-      <div class="col-md-none">
-        <a href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">
-            <img class="img-fluid rounded" src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
-        </a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <hr>
-    @endforeach
-    @elseif(config('app.locale') == 'de')  
-    @foreach ($galeriesObjects as $galeriesObject)
-    <!-- Project One -->
-    <div class="row">
-      <div class="col-md-none">
-        <a href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">
-            <img class="img-fluid rounded" src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
-        </a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-    @endforeach 
-    @else 
-    @foreach ($galeriesObjects as $blogsObject)
-    <!-- Project One -->
-    <div class="row">
-      <div class="col-md-none">
-        <a href="{{ asset('/images/galerie/'.$galeriesObject->image) }}">
-            <img class="img-fluid rounded" src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
-        </a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-    @endforeach
-    @endif
     <!-- Pagination -->
+    <hr>
     <!-- end operation -->
     <div class="pagination justify-content-center mb-4">
         {!! $galeriesObjects->render() !!}

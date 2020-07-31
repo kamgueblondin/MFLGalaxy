@@ -15,8 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', "HomeController@index");
 
+Route::get('/test-contact', function () {
+    $m=new App\Mail\Contact([
+        'subject' => 'Durand',
+        'nom' => 'Durand',
+        'email' => 'durand@chezlui.com',
+        'message' => 'Je voulais vous dire que votre site est magnifique !'
+        ]);
+   Illuminate\Support\Facades\Mail::to('landrynjikam79@gmail.com')
+    ->send($m);
+});
+
 // Les routes des différentes pages
 
+Route::post('mail','ContactController@storeMail')->name('mail');
 Route::get('/about_us', "PagesController@about_us")->name('about_us');
 Route::get('/our_goals', "PagesController@our_goals")->name('our_goals');
 Route::get('/our_services', "PagesController@our_services")->name('our_services');

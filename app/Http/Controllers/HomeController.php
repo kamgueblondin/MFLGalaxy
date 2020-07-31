@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\FaqAide;
 use App\EnquiryAide;
 use App\Blog;
 use App\Information;
+use App\Mail\Contact;
 
 
 class HomeController extends Controller
@@ -39,5 +41,12 @@ class HomeController extends Controller
         $enquiry->number = $request->number;
         $enquiry->save();
         return back();
+    }
+    public function storeMail(Request $request)
+    {
+        Mail::to('fomacorp000@gmail.com')
+            ->send(new Contact($request->except('_token')));
+ 
+        return redirect()->to('/');
     }
 }

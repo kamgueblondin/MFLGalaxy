@@ -40,39 +40,39 @@
             <p class="card-text">KS2, KS3, KS4, KS5</p>
           </div>
           <div class="card-footer">
-            <a href="#">name@example.com</a>
+            <a href="#"><!--name@example.com--></a>
           </div>
         </div>
       </div>
       <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="{{ asset('images/image/IMG-20200706-WA0033.jpg') }}" alt="team">
+          <img class="card-img-top" src="{{ asset('images/image/people.jpg') }}" alt="team">
           <div class="card-body">
             
             <h6 class="card-subtitle mb-2 text-muted">@lang('Secretary')</h6>
             <p class="card-text"></p>
           </div>
           <div class="card-footer">
-            <a href="#">name@example.com</a>
+            <a href="#"><!--name@example.com--> --</a>
           </div>
         </div>
       </div>
       <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="{{ asset('images/image/IMG-20200706-WA0033.jpg') }}" alt="team">
+          <img class="card-img-top" src="{{ asset('images/image/people.jpg') }}" alt="team">
           <div class="card-body">
             
             <h6 class="card-subtitle mb-2 text-muted">@lang('Teacher Spanish')</h6>
             <p class="card-text">KS3, KS4, KS5</p>
           </div>
           <div class="card-footer">
-            <a href="#">name@example.com</a>
+            <a href="#"><!--name@example.com--></a>
           </div>
         </div>
       </div>
       <div class="col-lg-3 mb-3">
         <div class="card h-100 text-center">
-          <img class="card-img-top" src="{{ asset('images/image/IMG-20200706-WA0033.jpg') }}" alt="team">
+          <img class="card-img-top" src="{{ asset('images/image/people.jpg') }}" alt="team">
           <div class="card-body">
             
             <h6 class="card-subtitle mb-2 text-muted">@lang('Teacher German')</h6>
