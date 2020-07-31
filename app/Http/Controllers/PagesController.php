@@ -40,7 +40,7 @@ class PagesController extends Controller
 		return view('pages.german');
 	}
 	public function gallery(){
-		$galeriesObjects = Galerie::paginate(5);
+		$galeriesObjects = Galerie::paginate(6);
 		return view('pages.gallery', compact('galeriesObjects'));
 	}
 	public function class_structure(){

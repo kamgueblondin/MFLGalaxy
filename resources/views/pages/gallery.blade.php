@@ -18,7 +18,7 @@
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
             <a {{ asset('/images/galerie/'.$galeriesObject->image) }}>
-              <img class="card-img-top"src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" height="500px" alt="{{$galeriesObject->title_frensh}}">
+              <img class="card-img-top"src="{{ asset('/images/galerie/'.$galeriesObject->image) }}" alt="{{$galeriesObject->title_frensh}}">
             </a>
           </div>
         </div>
