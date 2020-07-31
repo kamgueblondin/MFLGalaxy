@@ -1,9 +1,19 @@
 @extends('layouts.app')
     @section("title") @lang('Enquiry Form') | {{ config('app.name', 'MFLGalaxy') }} @endsection
 @section('content')
-    <!-- Page Heading/Breadcrumbs -->
+    <!-- Page Heading/Breadcrumbs -->  
     <h1 class="mt-2 mb-2">@lang('Enquiry Form')
-    
+      @if(Session::has('success_message'))
+      <div class="alert alert-success">
+        <span class="glyphicon glyphicon-ok"></span>
+        {!! session('success_message') !!}
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+    @endif
     </h1>
 
     <ol class="breadcrumb">
@@ -23,20 +33,18 @@
       <div class="col-lg-4 mb-4">
         <h3>Contact Details</h3>
         <p>
-           Place
+           
           <br>
           <br>
         </p>
         <p>
-          <abbr title="Phone">Phone</abbr>: 00 442 085 938 136
+          <abbr title="Phone">@lang('Phone')</abbr>: 00 442 085 938 136
         </p>
         <p>
           <abbr title="Email">Email</abbr>:
           <a href="mailto:Mfl_galaxy2020@yahoo.com">Mfl_galaxy2020@yahoo.com</a>
         </p>
-        <p>
-          <abbr title="Hours">Hours</abbr>: Monday - Friday: 8:00AM to 5:00PM
-        </p>
+      
       </div>
     </div>
     <!-- /.row -->
@@ -44,45 +52,158 @@
     <!-- Contact Form -->
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="row">
-      <div class="col-lg-8 mb-4">
-        <h3>Send us a Message</h3>
+      <div class="col-lg-8 mb-4">  
+
+         </div>
+      </div> 
+        <h3>@lang('Enquiry Form')</h3>
         <form method="post" action="{{route('enquiry_form')}}" name="sentMessage container-fluid" id="contactForm" novalidate>
           @csrf
+        <br/> <div class="control-group form-group">
+            <div class="controls">
+              <div class="row"> 
+                <div class="col-2"> 
+                  <label>@lang('Student Name'):</label>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                </div>
+              </div> 
+                  <p class="help-block"></p>
+            </div>
+          </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Student Name:</label>
-              <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="Please enter your name.">
+              <div class="row"> 
+                <div class="col-2">
+                  <label>@lang('Parent Name'):</label>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" id="parent" name="parent" required data-validation-required-message="Please enter your name.">
+                  <br/>
+                  <ul>
+                    <div class="control-group form-group">
+                    <div class="controls">
+                      <div class="row"> 
+                        <div class="col-2"> 
+                  
+                    <li><label>@lang('Phone Contact'):</label></li>
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" id="number" name="number" required data-validation-required-message="Please enter your name.">
+                  </div>
+                </div> 
+                <p class="help-block"></p>
+              </div>
+            </div> 
+            <div class="control-group form-group">
+              <div class="controls">
+                <div class="row"> 
+                  <div class="col-2">
+                    <li><label>@lang('Email Contact'):</label></li>
+                    </div>
+                  <div class="col">
+
+                  <input type="email" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}" autofocus>
+                  @if ($errors->has('email'))
+                      <div class="invalid-feedback">
+                          {{ $errors->first('email') }}
+                      </div>
+                  @endif
+                </div> 
+                <p class="help-block"></p>
+              </div>
+            </div> 
+          </div>
+                  </ul>
+                </div>
+              </div> 
+                  <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <div class="row">
+              <label>@lang('Student Information'):</label>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <label>@lang('Age'):</label>
+              </div> 
+              <div class="col-1">
+                <input type="text" class="form-control" id="age" name="age" required data-validation-required-message="Please enter your age.">
+              </div> 
+
+                <div class="col-1">
+                <label>@lang('Grade'):</label>
+            </div>
+            <div class="col-2">
+              <input type="text" class="form-control" id="grade" name="grade" required data-validation-required-message="Please enter your grade.">
+            </div>
+            <div class="col-1">
+              <label>@lang('Gender'):</label>
+          </div>
+          <div class="col-2">
+            M <input type="radio" name="gender" value="Male"> 
+            F <input type="radio" name="gender" value="Female">
+          </div>
+          </div>
+          <p class="help-block"></p>
+        </div>
+      </div>
+      <div class="control-group form-group">
+        <div class="controls">
+          <div class="row"> 
+            <div class="col-3.5">
+              <label>@lang('Primary Course/Subject Needed'):</label>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="primary_course" name="primary_course" required data-validation-required-message="">
+            </div>
+          </div> 
               <p class="help-block"></p>
+        </div>
+      </div>
+      <div class="control-group form-group">
+        <div class="controls">
+          <div class="row"> 
+            <div class="col-4">
+              <label>@lang('Additional Course/Subject(If Needed)'):</label>
             </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Parent Name:</label>
-              <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="Please enter your name.">
+            <div class="col">
+              <input type="text" class="form-control" id="additional_course" name="additional_course" required data-validation-required-message="">
+            </div>
+          </div> 
               <p class="help-block"></p>
+        </div>
+      </div>
+      <div class="control-group form-group">
+        <div class="controls">
+          <div class="row"> 
+            <div class="col-3">
+              <label>@lang('Please choice of level'):</label>
             </div>
-          </div>
+            <div class="col">
+             KS2 <input type="radio" name="choice">
+             KS3 <input type="radio" name="choice">
+             KS4 <input type="radio" name="choice">
+             KS5 <input type="radio" name="choice">
+             ADULTS <input type="radio" name="choice">
+            </div>
+          </div> 
+              <p class="help-block"></p>
+        </div>
+      </div>
+
           <div class="control-group form-group">
             <div class="controls">
-              <label>Phone Contact:</label>
-              <input type="tel" class="form-control" id="number" name="number" required data-validation-required-message="Please enter your phone number.">
-            </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Email Contact:</label>
-              <input type="email" class="form-control" id="email" name="email" required data-validation-required-message="Please enter your email address.">
-            </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Additional Notes:</label>
+              <label>@lang('Additional Notes'):</label>
               <textarea rows="10" cols="100" class="form-control" id="message" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
             </div>
           </div>
           <div id="success"></div>
           <!-- For success/fail messages -->
-          <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">@lang('Send')</button>
         </form>
       </div>
 

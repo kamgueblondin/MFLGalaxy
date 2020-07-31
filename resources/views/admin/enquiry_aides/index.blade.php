@@ -51,9 +51,17 @@
 							<table class="table table-striped ">
 								<thead>
 									<tr>
-										<th>Name</th>
-										<th>Email</th>
-										<th>Number</th>
+										<th>Student Name</th>
+										<th>Email Contact</th>
+										<th>Phone Contact</th>
+										<th>Parent Name</th>
+										<th>Gender</th>
+										<th>Grade</th>
+										<th>Age</th>
+										<th>Primary Course/Subject Needed</th>
+										<th>Additional Course/Subject(If Needed)</th>
+										<th>Please choice of level</th>
+										<th>Additional Notes</th>
 
 										<th></th>
 									</tr>
@@ -64,6 +72,16 @@
 										<td>{{ $enquiryAides->name }}</td>
 										<td>{{ $enquiryAides->email }}</td>
 										<td>{{ $enquiryAides->number }}</td>
+										<td>{{ $enquiryAides->parent }}</td>
+										<td>{{ $enquiryAides->gender }}</td>
+										<td>{{ $enquiryAides->grade }}</td>
+										<td>{{ $enquiryAides->age }}</td>
+										<td>{{ $enquiryAides->primary_course }}</td>
+										<td>{{ $enquiryAides->additional_course }}</td>
+										<td>{{ $enquiryAides->choice }}</td>
+										<td>{{ $enquiryAides->message }}</td>
+										
+										
 
 										<td>
 

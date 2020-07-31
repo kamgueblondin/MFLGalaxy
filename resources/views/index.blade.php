@@ -66,7 +66,7 @@
 		  <!-- Page Content -->
 	  <div class="container-fluid">
 
-		<h1 class="my-4">Welcome to MFLGalaxy</h1>
+		<h1 class="my-4">@lang('Welcome to') MFLGalaxy</h1>
 
 		<!-- Marketing Icons Section -->
 		<div class="row">
@@ -77,25 +77,25 @@
 				<p class="card-text">@lang('Good news!! We now provide online tuition and it is a big success with the existing students. It doesn\'t matter where you live in England, you can now join our online tuition as long as you have a laptop/ipad/pc, headphone and a broadband connection.')</p>
 			  </div>
 			  <div class="card-footer bg-white">
-				@lang('Click') <a href="#" class="btn btn-primary">@lang('here')</a> @lang('to know more about us.')
+				@lang('Click') <a href="{{ route('about_us') }}" class="btn btn-primary">@lang('here')</a> @lang('to know more about us.')
 			  </div>
 			</div>
 		  </div>
 		  <div class="col-lg-6 mb-4">
 			<div class="card h-100 box-3">
-			  <h4 class="card-header bg-white">@lang('OUR TARGET SCHOOLS')</h4>
+			  <h4 class="card-header bg-white">@lang('OUR TARGET')</h4>
 			  <div class="card-body bg-white">
-				<p>@lang('We target the following schools for 11 Plus exams:')  </p>
+				<p>@lang('')  </p>
 					<ul>
-						<li>St. Olave's, Orpington</li>
-							<li>@lang('The Judd School'), Tonbridge</li>
-							<li>@lang('Dartford Grammar'), Dartford</li>
-							<li>@lang('Newstead Wood'), Orpington</li>
-							<li>@lang('Tonbridge Grammar')</li>
-							<li>Wilson's School, Wallington</li>
-							<li>QE Boys; Henrietta Barnet</li>
-							<li>@lang('Other Kent and Bexley schools')</li>
-							<li>@lang('Private Schools (scholarships)')</li>
+						<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
 
 					</ul>
 				</div>
@@ -159,7 +159,7 @@
 		  </div>
 		  <div class="col-lg-4 col-sm-6 portfolio-item">
 			<div class="card h-100 box-3">
-			  <a href="#"><img class="img-card" src="{{asset('images/img-box2.png')}}" alt=""></a>
+			  <a href="{{ route('our_goals') }}"><img class="img-card" src="{{asset('images/img-box2.png')}}" alt=""></a>
 			  <div class="card-body">
 				<h4 class="card-title">
 				  <a style="text-decoration:none;" href="{{ route('our_goals') }}">@lang('Our Goal')</a>
@@ -170,7 +170,7 @@
 		  </div>
 		  <div class="col-lg-4 col-sm-6 portfolio-item">
 			<div class="card h-100 box-3">
-			  <a href="#"><img class="img-card" src="{{asset('images/img-box3.png')}}" alt=""></a>
+			  <a href="{{ route('testimonials') }}"><img class="img-card" src="{{asset('images/img-box3.png')}}" alt=""></a>
 			  <div class="card-body">
 				<h4 class="card-title">
 				  <a style="text-decoration:none;" href="{{ route('testimonials') }}"> @lang('Testimonials')</a>
@@ -181,7 +181,7 @@
 		  </div>
 		  <div class="col-lg-4 col-sm-6 portfolio-item">
 			<div class="card h-100 box-3">
-			  <a href="#"><img class="img-card" src="{{asset('images/fr.png')}}" alt=""></a>
+			  <a href="{{ route('french') }}"><img class="img-card" src="{{asset('images/fr.png')}}" alt=""></a>
 			  <div class="card-body">
 				<h4 class="card-title">
 				  <a style="text-decoration:none;" href="{{ route('french') }}">@lang('French classes')</a>
@@ -192,7 +192,7 @@
 		  </div>
 		  <div class="col-lg-4 col-sm-6 portfolio-item">
 			<div class="card h-100 box-3">
-			  <a href="#"><img class="img-card" src="{{asset('images/es.png')}}" alt=""></a>
+			  <a href="{{ route('spanish') }}"><img class="img-card" src="{{asset('images/es.png')}}" alt=""></a>
 			  <div class="card-body">
 				<h4 class="card-title">
 				  <a style="text-decoration:none;" href="{{ route('spanish') }}"> @lang('Spanish classes')</a>
@@ -203,7 +203,7 @@
 		  </div>
 		  <div class="col-lg-4 col-sm-6 portfolio-item">
 			<div class="card h-100 box-3">
-			  <a href="#"><img class="img-card" src="{{asset('images/tes.png')}}" alt="" /></a>
+			  <a href="{{ route('german') }}"><img class="img-card" src="{{asset('images/tes.png')}}" alt="" /></a>
 			  <div class="card-body">
 				<h4 class="card-title">
 				  <a style="text-decoration:none;" href="{{ route('german') }}"> @lang('German classes')</a>

@@ -39,8 +39,8 @@
             <h6 class="card-subtitle mb-2 text-muted">MD, @lang('Teacher French')</h6>
             <p class="card-text">KS2, KS3, KS4, KS5</p>
           </div>
-          <div class="card-footer">
-            <a href="#"><!--name@example.com--></a>
+          <div class="card-footer" style="font-size:14px;">
+            <a href="mailto:bertrand2005emo@yahoo.fr">bertrand2005emo@yahoo.fr</a>
           </div>
         </div>
       </div>
@@ -52,8 +52,8 @@
             <h6 class="card-subtitle mb-2 text-muted">@lang('Secretary')</h6>
             <p class="card-text"></p>
           </div>
-          <div class="card-footer">
-            <a href="#"><!--name@example.com--> --</a>
+          <div class="card-footer" style="font-size:14px;">
+            <a href="#">name@example.com</a>
           </div>
         </div>
       </div>
@@ -65,8 +65,8 @@
             <h6 class="card-subtitle mb-2 text-muted">@lang('Teacher Spanish')</h6>
             <p class="card-text">KS3, KS4, KS5</p>
           </div>
-          <div class="card-footer">
-            <a href="#"><!--name@example.com--></a>
+          <div class="card-footer" style="font-size:14px;">
+            <a href="#">name@example.com</a>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@
             <h6 class="card-subtitle mb-2 text-muted">@lang('Teacher German')</h6>
             <p class="card-text">KS3, KS4, KS5</p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer" style="font-size:14px;">
             <a href="#">name@example.com</a>
           </div>
         </div>

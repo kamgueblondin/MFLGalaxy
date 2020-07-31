@@ -39,6 +39,14 @@ class HomeController extends Controller
         $enquiry->email = $request->email;
         $enquiry->message = $request->message;
         $enquiry->number = $request->number;
+        $enquiry->parent = $request->parent;
+        $enquiry->age = $request->age;
+        $enquiry->grade = $request->grade;
+        $enquiry->choice = $request->choice;
+        $enquiry->primary_course = $request->primary_course;
+        $enquiry->additional_course = $request->additional_course;
+        $enquiry->gender = $request->gender;
+        
         $enquiry->save();
         return back();
     }
