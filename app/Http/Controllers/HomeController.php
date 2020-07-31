@@ -48,7 +48,7 @@ class HomeController extends Controller
         $enquiry->gender = $request->gender;
         
         $enquiry->save();
-        return back();
+        return back()->with('success_message', 'Your message has been sent successfully. We will contact you!.');
     }
     public function storeMail(Request $request)
     {
