@@ -1,9 +1,19 @@
 @extends('layouts.app')
     @section("title") @lang('Enquiry Form') | {{ config('app.name', 'MFLGalaxy') }} @endsection
 @section('content')
-    <!-- Page Heading/Breadcrumbs -->
+    <!-- Page Heading/Breadcrumbs -->  
     <h1 class="mt-2 mb-2">@lang('Enquiry Form')
-    
+      @if(Session::has('success_message'))
+      <div class="alert alert-success">
+        <span class="glyphicon glyphicon-ok"></span>
+        {!! session('success_message') !!}
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+    @endif
     </h1>
 
     <ol class="breadcrumb">
@@ -28,7 +38,7 @@
           <br>
         </p>
         <p>
-          <abbr title="Phone">Phone</abbr>: 00 442 085 938 136
+          <abbr title="Phone">@lang('Phone')</abbr>: 00 442 085 938 136
         </p>
         <p>
           <abbr title="Email">Email</abbr>:
@@ -46,14 +56,14 @@
 
          </div>
       </div> 
-        <h3>Enquiry Form</h3>
+        <h3>@lang('Enquiry Form')</h3>
         <form method="post" action="{{route('enquiry_form')}}" name="sentMessage container-fluid" id="contactForm" novalidate>
           @csrf
         <br/> <div class="control-group form-group">
             <div class="controls">
               <div class="row"> 
                 <div class="col-2"> 
-                  <label>Student Name:</label>
+                  <label>@lang('Student Name'):</label>
                 </div>
                 <div class="col">
                   <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="Please enter your name.">
@@ -66,7 +76,7 @@
             <div class="controls">
               <div class="row"> 
                 <div class="col-2">
-                  <label>Parent Name:</label>
+                  <label>@lang('Parent Name'):</label>
                 </div>
                 <div class="col">
                   <input type="text" class="form-control" id="parent" name="parent" required data-validation-required-message="Please enter your name.">
@@ -77,7 +87,7 @@
                       <div class="row"> 
                         <div class="col-2"> 
                   
-                    <li><label>Phone Contact:</label></li>
+                    <li><label>@lang('Phone Contact'):</label></li>
                   </div>
                   <div class="col">
                     <input type="text" class="form-control" id="number" name="number" required data-validation-required-message="Please enter your name.">
@@ -93,12 +103,18 @@
                     <li><label>@lang('Email Contact'):</label></li>
                     </div>
                   <div class="col">
-                    <input type="text" class="form-control" id="email" name="email" required data-validation-required-message="Please enter your name.">
-                  </div>
+
+                  <input type="email" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}" autofocus>
+                  @if ($errors->has('email'))
+                      <div class="invalid-feedback">
+                          {{ $errors->first('email') }}
+                      </div>
+                  @endif
                 </div> 
                 <p class="help-block"></p>
               </div>
             </div> 
+          </div>
                   </ul>
                 </div>
               </div> 
@@ -108,7 +124,7 @@
           <div class="control-group form-group">
             <div class="controls">
               <div class="row">
-              <label>Student Information:</label>
+              <label>@lang('Student Information'):</label>
             </div>
             <div class="row">
               <div class="col-1">
@@ -128,8 +144,8 @@
               <label>@lang('Gender'):</label>
           </div>
           <div class="col-2">
-            M <input type="radio" name="gender"> 
-            F <input type="radio" name="gender">
+            M <input type="radio" name="gender" value="Male"> 
+            F <input type="radio" name="gender" value="Female">
           </div>
           </div>
           <p class="help-block"></p>
@@ -139,7 +155,7 @@
         <div class="controls">
           <div class="row"> 
             <div class="col-3.5">
-              <label>Primary Course/Subject Needed:</label>
+              <label>@lang('Primary Course/Subject Needed'):</label>
             </div>
             <div class="col">
               <input type="text" class="form-control" id="primary_course" name="primary_course" required data-validation-required-message="">
@@ -152,7 +168,7 @@
         <div class="controls">
           <div class="row"> 
             <div class="col-4">
-              <label>Additional Course/Subject(If Needed):</label>
+              <label>@lang('Additional Course/Subject(If Needed)'):</label>
             </div>
             <div class="col">
               <input type="text" class="form-control" id="additional_course" name="additional_course" required data-validation-required-message="">
@@ -165,7 +181,7 @@
         <div class="controls">
           <div class="row"> 
             <div class="col-3">
-              <label>Please choice of level:</label>
+              <label>@lang('Please choice of level'):</label>
             </div>
             <div class="col">
              KS2 <input type="radio" name="choice">
@@ -187,7 +203,7 @@
           </div>
           <div id="success"></div>
           <!-- For success/fail messages -->
-          <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">@lang('Send')</button>
         </form>
       </div>
 
