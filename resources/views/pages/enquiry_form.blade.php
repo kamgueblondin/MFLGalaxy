@@ -3,7 +3,16 @@
 @section('content')
     <!-- Page Heading/Breadcrumbs -->  
     <h1 class="mt-2 mb-2">@lang('Enquiry Form')
-      @if(Session::has('success_message'))
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{{ url('/') }}">@lang('Home')</a>
+      </li>
+      <li class="breadcrumb-item active">@lang('Enquiry Form')</li>
+    </ol>
+    <!-- Content Row -->
+    @if(Session::has('success_message'))
       <div class="alert alert-success">
         <span class="glyphicon glyphicon-ok"></span>
         {!! session('success_message') !!}
@@ -14,15 +23,6 @@
 
       </div>
     @endif
-    </h1>
-
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="{{ url('/') }}">@lang('Home')</a>
-      </li>
-      <li class="breadcrumb-item active">@lang('Enquiry Form')</li>
-    </ol>
-    <!-- Content Row -->
     <div class="row">
       <!-- Map Column -->
       <div class="col-lg-8 mb-4">
