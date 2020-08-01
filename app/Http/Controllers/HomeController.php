@@ -9,6 +9,8 @@ use App\EnquiryAide;
 use App\Blog;
 use App\Information;
 use App\Mail\Contact;
+use PDF;
+use App\Http\Requests\EnqueryResquest;
 
 
 class HomeController extends Controller
@@ -33,7 +35,7 @@ class HomeController extends Controller
         $faq->save();
         return back();
     }
-    public function storeEnquiry(Request $request){
+    public function storeEnquiry(EnqueryResquest $request){
         $enquiry = new EnquiryAide;
         $enquiry->name = $request->name;
         $enquiry->email = $request->email;
@@ -46,8 +48,10 @@ class HomeController extends Controller
         $enquiry->primary_course = $request->primary_course;
         $enquiry->additional_course = $request->additional_course;
         $enquiry->gender = $request->gender;
-        
         $enquiry->save();
+        //return $this->loadPdf(1);
+        Mail::to('Mfl_galaxy2020@yahoo.com')
+            ->send(new Contact($request->except('_token')));
         Mail::to('landrynjikam79@gmail.com')
             ->send(new Contact($request->except('_token')));
         return back()->with('success_message', 'Your message has been sent successfully. We will contact you!.');
@@ -58,5 +62,11 @@ class HomeController extends Controller
             ->send(new Contact($request->except('_token')));
  
         return redirect()->to('/');
+    }
+    public function loadPdf($id){
+        $enquiry=EnquiryAide::find($id);
+		$pdf = PDF::loadView('form.form',compact('enquiry'));
+		return $pdf->stream('contact.pdf');
+
     }
 }

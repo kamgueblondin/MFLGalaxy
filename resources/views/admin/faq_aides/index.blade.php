@@ -57,7 +57,7 @@
 							<tr>
 								<th>Name</th>
 								<th>Email</th>
-
+					
 								<th></th>
 							</tr>
 						</thead>
@@ -66,7 +66,7 @@
 							<tr>
 								<td>{{ $faqAides->name }}</td>
 								<td>{{ $faqAides->email }}</td>
-
+								
 								<td>
 
 									<form method="POST" action="{!! route('faq_aides.faq_aides.destroy', $faqAides->id) !!}" accept-charset="UTF-8">

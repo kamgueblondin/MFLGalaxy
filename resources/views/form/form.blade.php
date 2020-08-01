@@ -1012,26 +1012,26 @@ style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
 mso-ansi-language:EN-US'>Enquiry Form</span><o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b><span lang=EN-US style='font-size:16.0pt;line-height:
-107%;font-family:"Times New Roman",serif;mso-ansi-language:EN-US'>Student Name:<o:p></o:p></span></b></p>
+107%;font-family:"Times New Roman",serif;mso-ansi-language:EN-US'>Student Name:<o:p> {{ $enquiry->name }}</o:p></span></b></p>
 
 <p class=MsoNormal><b><span lang=EN-US style='font-size:16.0pt;line-height:
-107%;font-family:"Times New Roman",serif;mso-ansi-language:EN-US'>Parent Name:<o:p></o:p></span></b></p>
+107%;font-family:"Times New Roman",serif;mso-ansi-language:EN-US'>Parent Name:<o:p> {{ $enquiry->parent }}</o:p></span></b></p>
 
 <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l0 level1 lfo2'><![if !supportLists]><span
 lang=EN-US style='font-size:16.0pt;line-height:107%;font-family:Wingdings;
 mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;mso-ansi-language:
-EN-US;mso-bidi-font-weight:bold'><span style='mso-list:Ignore'>§<span
+EN-US;mso-bidi-font-weight:bold'><span style='mso-list:Ignore'><span
 style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><b><span
 lang=EN-US style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
-mso-ansi-language:EN-US'>Phone Contact:<o:p></o:p></span></b></p>
+mso-ansi-language:EN-US'>. Phone Contact:<o:p> </o:p></span> {{ $enquiry->number }}</b></p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l0 level1 lfo2'><![if !supportLists]><span
 lang=EN-US style='font-size:16.0pt;line-height:107%;font-family:Wingdings;
 mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;mso-ansi-language:
-EN-US;mso-bidi-font-weight:bold'><span style='mso-list:Ignore'>§<span
+EN-US;mso-bidi-font-weight:bold'><span style='mso-list:Ignore'><span
 style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><b><span
 lang=EN-US style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
-mso-ansi-language:EN-US'>Email Contact:<o:p></o:p></span></b></p>
+mso-ansi-language:EN-US; display:flex;'>. Email Contact:<o:p></o:p></span> {{ $enquiry->email }}</b></p>
 
 <p class=MsoNormal><b><span lang=EN-US style='font-size:16.0pt;line-height:
 107%;font-family:"Times New Roman",serif;mso-ansi-language:EN-US'>Student
@@ -1040,30 +1040,30 @@ Information:<o:p></o:p></span></b></p>
 <p class=MsoNormal style='margin-left:35.4pt'><b><span lang=EN-US
 style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
 mso-ansi-language:EN-US'>Age:</span></b><span lang=EN-US style='font-size:16.0pt;
-line-height:107%;font-family:"Times New Roman",serif;mso-ansi-language:EN-US'> <span
+line-height:107%;font-family:"Times New Roman",serif;mso-ansi-language:EN-US'> {{ $enquiry->age }} <span
 style='mso-tab-count:2'>                   </span><span style='mso-tab-count:
 1'>         </span><span style='mso-tab-count:1'>         </span><b>Grade:</b> <span
-style='mso-tab-count:2'>              </span><span style='mso-tab-count:1'>         </span><b>Gender:</b>
-M/F<o:p></o:p></span></p>
+style='mso-tab-count:2'>      {{ $enquiry->grade }}        </span><span style='mso-tab-count:1'>         </span><b>Gender:</b>
+{{ $enquiry->gender }}<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-left:35.4pt'><b><span lang=EN-US
 style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
-mso-ansi-language:EN-US'>Primary Course/Subject Needed:<o:p></o:p></span></b></p>
+mso-ansi-language:EN-US'>Primary Course/Subject Needed:<o:p></o:p></span> {{ $enquiry->primary_course }}</b></p>
 
 <p class=MsoNormal style='margin-left:35.4pt'><b><span lang=EN-US
 style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
-mso-ansi-language:EN-US'>Additional course/Subject (If Needed):<o:p></o:p></span></b></p>
+mso-ansi-language:EN-US'>Additional course/Subject (If Needed):<o:p></o:p></span> {{ $enquiry->additional_course }}</b></p>
 
 <p class=MsoNormal><b><span lang=EN-US style='font-size:16.0pt;line-height:
 107%;font-family:"Times New Roman",serif;mso-ansi-language:EN-US'>Please
 specify preferred gender of tutor:</span></b><span lang=EN-US style='font-size:
 16.0pt;line-height:107%;font-family:"Times New Roman",serif;mso-ansi-language:
-EN-US'> M / F / No preferred<o:p></o:p></span></p>
+EN-US'> {{ $enquiry->choice }}<o:p></o:p></span></p>
 
 <p class=MsoNormal><b><span lang=EN-US style='font-size:16.0pt;line-height:
 107%;font-family:"Times New Roman",serif;mso-ansi-language:EN-US'>Additional Notes:<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span>{{ $enquiry->message }}</p>
 
 </div>
 

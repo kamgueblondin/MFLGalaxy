@@ -30,6 +30,7 @@ Route::get('/test-contact', function () {
 
 Route::post('mail','ContactController@storeMail')->name('mail');
 Route::get('/about_us', "PagesController@about_us")->name('about_us');
+Route::get('/doc/{id}', "HomeController@loadPdf")->name('document');
 Route::get('/our_goals', "PagesController@our_goals")->name('our_goals');
 Route::get('/our_services', "PagesController@our_services")->name('our_services');
 Route::get('/testimonials', "PagesController@testimonials")->name('testimonials');
@@ -50,7 +51,7 @@ Route::get('/more_infos', "PagesController@more_infos")->name('more_infos');
 Route::post('/faq', 'HomeController@storeFaq')->name('faq');
 Route::post('/enquiry_form', 'HomeController@storeEnquiry')->name('enquiry_form');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('language/{lang}', 'HomeController@language')->name('language');
 Route::get('/home', 'DashboardController@index')->name('home');

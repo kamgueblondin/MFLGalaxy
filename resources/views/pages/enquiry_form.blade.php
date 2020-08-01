@@ -23,11 +23,18 @@
 
       </div>
     @endif
+    @if ($errors->any())
+        <ul class="alert alert-danger">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
     <div class="row">
       <!-- Map Column -->
       <div class="col-lg-8 mb-4">
         <!-- Embedded Google Map -->
-        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+        <iframe width='100%' height='400px' id='mapcanvas' src='https://maps.google.com/maps?q=London,%20United%20Kingdom&Roadmap&z=10&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'><div class='zxos8_gm'><a href='https://www.twinstiarasandtantrums.com/2020/06/buying-a-mattress-is-a-nightmare/'>here</a></div><div style='overflow:hidden;'><div id='gmap_canvas' style='height:100%;width:700px;'></div><div><small>Powered by <a href='https://www.embedgooglemap.co.uk'>Embed Google Map</a></small></div></iframe>
       </div>
       <!-- Contact Details Column -->
       <div class="col-lg-4 mb-4">
@@ -104,7 +111,7 @@
                     </div>
                   <div class="col">
 
-                  <input type="email" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}">
+                  <input type="email" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" required value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}">
                   @if ($errors->has('email'))
                       <div class="invalid-feedback">
                           {{ $errors->first('email') }}
@@ -144,7 +151,7 @@
               <label>@lang('Gender'):</label>
           </div>
           <div class="col-2">
-            M <input type="radio" name="gender" value="Male"> 
+            M <input type="radio" checked name="gender" value="Male"> 
             F <input type="radio" name="gender" value="Female">
           </div>
           </div>
@@ -184,7 +191,7 @@
               <label>@lang('Please choice of level'):</label>
             </div>
             <div class="col">
-             KS2 <input type="radio" name="choice" value="KS2">
+             KS2 <input type="radio" checked name="choice" value="KS2">
              KS3 <input type="radio" name="choice" value="KS3">
              KS4 <input type="radio" name="choice" value="KS4">
              KS5 <input type="radio" name="choice" value="KS5">

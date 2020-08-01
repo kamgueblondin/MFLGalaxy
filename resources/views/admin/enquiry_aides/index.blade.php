@@ -51,6 +51,7 @@
 							<table class="table table-striped ">
 								<thead>
 									<tr>
+										<th>Download</th>
 										<th>Student Name</th>
 										<th>Email Contact</th>
 										<th>Phone Contact</th>
@@ -69,6 +70,11 @@
 								<tbody>
 								@foreach($enquiryAidesObjects as $enquiryAides)
 									<tr>
+										<td>
+											<a href="{{ route('document', $enquiryAides->id ) }}" class="btn btn-infos">
+												Download
+											</a>
+										</td>
 										<td>{{ $enquiryAides->name }}</td>
 										<td>{{ $enquiryAides->email }}</td>
 										<td>{{ $enquiryAides->number }}</td>
