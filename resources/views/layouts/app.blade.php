@@ -163,7 +163,7 @@
              </ul>
 		<div class="txt-h-right mt-2 d-none d-sm-none d-md-none d-lg-block d-xl-block mt-5"> 
 			@lang('Click') <span class="gray-clr"><a href="{{ route('enquiry_form') }}">@lang('here') </a></span>@lang('to submit enquiry')<br/>
-			@lang('Please email us at') <span class="gray-clr"><a href="mailto:Mfl_galaxy2020@yahoo.com"> Mfl_galaxy2020@yahoo.com</a></span><br/>
+			@lang('Please email us at') <span class="gray-clr"><a href="mailto:mfl_galaxy2020@yahoo.com"> mfl_galaxy2020@yahoo.com</a></span><br/>
 			@lang('Put your phone number in the email')<br/>
 			@lang('Leave voicemail at') <span class="gray-clr">00447437465586</span><br/>
 		</div>

@@ -49,7 +49,7 @@
         </p>
         <p>
           <abbr title="Email">Email</abbr>:
-          <a href="mailto:Mfl_galaxy2020@yahoo.com">Mfl_galaxy2020@yahoo.com</a>
+          <a href="mailto:mfl_galaxy2020@yahoo.com">mfl_galaxy2020@yahoo.com</a>
         </p>
       
       </div>

@@ -50,7 +50,7 @@ class HomeController extends Controller
         $enquiry->gender = $request->gender;
         $enquiry->save();
         //return $this->loadPdf(1);
-        Mail::to('Mfl_galaxy2020@yahoo.com')
+        Mail::to('mfl_galaxy2020@yahoo.com')
             ->send(new Contact($request->except('_token')));
         Mail::to('landrynjikam79@gmail.com')
             ->send(new Contact($request->except('_token')));

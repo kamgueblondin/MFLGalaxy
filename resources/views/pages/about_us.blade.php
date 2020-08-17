@@ -19,9 +19,9 @@
       </div>
       <div class="col-lg-6">
         <h2>@lang('About Us')</h2>
-        <p>@lang('Would you like to learn French, German, or Spanish? Or maybe your child is studying one of these languages at school and needs a bit of extra support? Finding the right languages tutor can seem like a bit of a mine field.  Here at MFL Galaxy,  all tuition and classes are delivered by  fully qualified languages teachers. They  also teach in secondary schools so they are fully aware of the requirements for KS2, KS3, KS4 and GCSE.') </p>
+        <p>@lang('Would you like to learn French, German, or Spanish? Or maybe your child is studying one of these languages at school and needs a bit of extra support? Finding the right languages tutor can seem like a bit of a mine field.  Here at MFL Galaxy,  all tuition and classes are delivered by  fully qualified languages teachers. They  also teach in secondary schools so they are fully aware of the requirements for KS2, KS3 and GCSE.') </p>
         <p>@lang('Whether you are a complete beginner or have some previous knowledge,  individual tuition is ideal if you want to have a bespoke language learning experience.  Whether you wish to learn a bit of \'holiday language\' or something more serious, it is suitable for all ages from school pupils to adult learners and is extremely useful for preparing for the GCSE exam').</p>
-        <p>@lang('We offer tuition for French to A level, German and Spanish to GCSE. English as a foreign language is also available.  Tuition can take place even in your own home, subject to availability. (Please note there will be a supplement for longer travelling distances.)') </p>
+        <p>@lang('We offer tuition for French to A level, German and Spanish to GCSE. English as a foreign language is also available.  Tuition can take place even in your own home, subject to availability.') </p>
         <p>@lang('Please get in touch and we can discuss your needs as a learner and tailor a programme to suit you as an individual rather than following the group.')</p>
       </div>
     </div>

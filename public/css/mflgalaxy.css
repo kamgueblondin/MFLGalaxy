@@ -5,6 +5,7 @@
 @font-face{font-family:'Open Sans bold';src:url(../fonts/OpenSans-Bold-webfont.eot);src:url(../fonts/OpenSans-Bold-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/OpenSans-Bold-webfont.woff) format("woff"),url(../fonts/OpenSans-Bold-webfont.ttf) format("truetype"),url(../fonts/OpenSans-Bold-webfont.svg#OpenSansSemibold) format("svg");font-weight:500;font-style:normal}
 body {
   padding-top: 0px;
+  background-color:white;
 }
 
 .carousel-item {
@@ -93,7 +94,7 @@ ul.min-menu{margin-bottom: 0; display: block;}
 .min-menu li.mega-menu .su-menu li a{border: none;padding:5px 0;font-size: 14px;}
 .min-menu li.mega-menu .su-menu li a:hover{color: #444; padding-left:5px; background:rgba(0, 0, 0, 0); -webkit-transition: all 0.4s ease-out 0s; -moz-transition: all 0.4s ease-out 0s; -ms-transition: all 0.4s ease-out 0s; -o-transition: all 0.4s ease-out 0s; transition: all 0.4s ease-out 0s;}
 .min-menu li.mega-menu .su-menu{width: 100%;left: 0px;}
-.black-box{width:100%;display:block;height:60px;background-color:#243238;line-height:60px;letter-spacing:.2px;color:#fff;margin:auto;text-align:center;font-weight:400;font-size:20px}
+.black-box{width:100%;display:block;height:60px;background-color:#002493;opacity:80%;line-height:60px;letter-spacing:.2px;color:#fff;margin:auto;text-align:center;font-weight:400;font-size:20px}
 .title-txt{font-family:'Open Sans';font-size:22px;color:#006fa4}
 .text-cent-abt hr{width:300px;border-color:#c4c4c4!important}
 .btn-more{border:1px solid #00adef;border-radius:5px;color:#00adef;display:block;float:left;font-size:14px;padding:8px 35px;vertical-align:middle}
